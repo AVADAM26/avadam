@@ -1,0 +1,5 @@
+# Alle Suchmaschinen und KI-Crawler sind willkommen.
+User-agent: *
+Allow: /
+
+Sitemap: https://dmuccios24-oss.github.io/avadam/sitemap.xml

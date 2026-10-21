@@ -1,0 +1,27 @@
+# AVA-DAM
+
+> AVA-DAM builds websites, software, motion videos and interactive maps. The ideas are ours, the build is done with AI. Based in Trimbach (Switzerland) and Grantown-on-Spey (Scotland).
+
+AVA-DAM is the joint label of Adrian von Arb and Daniel Muccio. The name is pronounced like "Adam": a reminder of the first human being, where everything began, including the age of AI. Slogan: Human + Technology. Together.
+
+## What we do
+- Websites: Clear, fast websites that work just as well on a phone as on a computer. Built from day one so that Google and AI search can find and understand them.
+- Software and tools: Software for real-world workflows. GuardOpS grew out of 22 years in the security industry. We build what we would have needed ourselves.
+- Motion videos: Short animated videos for social media and websites. The story and the pictures in our heads are ours, AI helps us bring them to life.
+- Interactive maps: Maps that let Guests and customers explore on their own, with travel times, categories and the hosts' personal tips.
+
+## Projects
+- [VKU Oberbaselbiet](https://dmuccios24-oss.github.io/vku-entwurf/): A shared website for eight driving instructors offering traffic awareness and first aid courses. Dates, venues and sign-up in one place.
+- [Butterfly Cottage](https://www.butterfly-cottage.co.uk): Website for a holiday cottage for two in Grantown-on-Spey, right in the Cairngorms National Park. Personal, warm and with direct booking.
+- [Grantown map](https://www.butterfly-cottage.co.uk/grantown/grantown-map.html): More than 50 places to visit around Grantown-on-Spey, most of them under 90 minutes away. With travel times, categories and the hosts' favourite spots.
+- [GuardOpS](https://guardops.ch/): Operations software for small and medium-sized Swiss security companies. Shift planning, staff app, patrol checks with NFC or geofence, customer portal and invoices with Swiss QR bills.
+
+## Locations
+- Switzerland: 4632 Trimbach
+- United Kingdom: Grantown-on-Spey PH26 3JN, Scotland
+
+## Languages
+- [Deutsch](https://dmuccios24-oss.github.io/avadam/)
+- [English](https://dmuccios24-oss.github.io/avadam/en/)
+- [Italiano](https://dmuccios24-oss.github.io/avadam/it/)
+- [Français](https://dmuccios24-oss.github.io/avadam/fr/)
