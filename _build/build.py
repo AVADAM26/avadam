@@ -64,7 +64,7 @@ JS = ("(function(){var b=document.getElementById('totop'),M=['apfel','roboter','
  "busy=true;b.classList.add('go');"
  "setTimeout(function(){scrollTo({top:0,behavior:'smooth'})},650);"
  "setTimeout(function(){b.classList.remove('go','show');busy=false},2400)});"
- "var t=document.getElementById('theme');t.addEventListener('click',function(){var r=document.documentElement;"
+ "var g=document.getElementById('burger'),P=document.getElementById('mmenu');function sm(o){P.hidden=!o;g.setAttribute('aria-expanded',o?'true':'false')}g.addEventListener('click',function(){sm(P.hidden)});P.addEventListener('click',function(e){if(e.target.closest('a'))sm(false)});addEventListener('keydown',function(e){if(e.key==='Escape'&&!P.hidden){sm(false);g.focus()}});addEventListener('resize',function(){if(innerWidth>860)sm(false)});var t=document.getElementById('theme');t.addEventListener('click',function(){var r=document.documentElement;"
  "var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');"
  "var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('avadam-theme',n)}catch(e){}})})();")
 
@@ -190,8 +190,9 @@ def page(lang):
 <header class="top">
 <div class="wrap">
 <a class="brand" href="{r}{path_of(lang) or './'}" aria-label="AVA-DAM"><img class="logo-light" src="{A}avadam-logo.svg" alt="{e(t["logo_alt"])}" width="668" height="126"><img class="logo-dark" src="{A}avadam-logo-dark.svg" alt="" aria-hidden="true" width="668" height="126"></a>
-<div class="nav"><nav class="links nav" aria-label="Menu">{nav}</nav><div class="right">{lang_links(lang, r, t["lang_label"])}<button type="button" class="theme" id="theme" aria-label="{e(t["theme_label"])}" title="{e(t["theme_label"])}">{MOON}{SUN}</button></div></div>
+<div class="nav"><nav class="links nav" aria-label="Menu">{nav}</nav><div class="right">{lang_links(lang, r, t["lang_label"])}<button type="button" class="theme" id="theme" aria-label="{e(t["theme_label"])}" title="{e(t["theme_label"])}">{MOON}{SUN}</button><button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="mmenu" aria-label="{e(t["menu_label"])}"><span></span><span></span><span></span></button></div></div>
 </div>
+<div class="mpanel" id="mmenu" hidden><nav class="mlinks" aria-label="{e(t["menu_label"])}">{nav}</nav>{lang_links(lang, r, t["lang_label"])}</div>
 </header>
 
 <main id="inhalt">

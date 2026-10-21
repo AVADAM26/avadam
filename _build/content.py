@@ -7,6 +7,7 @@ LOCALE = {"de": "de_CH", "en": "en_GB", "it": "it_CH", "fr": "fr_CH"}
 
 T = {
 "de": {
+ "menu_label": "Menü",
  "top_label": "Nach oben",
  "theme_label": "Hell oder dunkel umschalten",
  "title": "AVA-DAM · Webseiten, Software, Motion-Videos und interaktive Karten mit KI",
@@ -69,6 +70,7 @@ T = {
  "logo_alt": "AVA-DAM Logo, Human + Technology. Together.",
 },
 "en": {
+ "menu_label": "Menu",
  "top_label": "Back to top",
  "theme_label": "Switch light or dark mode",
  "title": "AVA-DAM · Websites, software, motion videos and interactive maps built with AI",
@@ -131,6 +133,7 @@ T = {
  "logo_alt": "AVA-DAM logo, Human + Technology. Together.",
 },
 "it": {
+ "menu_label": "Menu",
  "top_label": "Torna su",
  "theme_label": "Passa a chiaro o scuro",
  "title": "AVA-DAM · Siti web, software, video animati e mappe interattive con l'IA",
@@ -193,6 +196,7 @@ T = {
  "logo_alt": "Logo AVA-DAM, Human + Technology. Together.",
 },
 "fr": {
+ "menu_label": "Menu",
  "top_label": "Retour en haut",
  "theme_label": "Basculer entre clair et sombre",
  "title": "AVA-DAM · Sites web, logiciels, vidéos animées et cartes interactives avec l'IA",
