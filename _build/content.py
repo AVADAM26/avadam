@@ -7,6 +7,8 @@ LOCALE = {"de": "de_CH", "en": "en_GB", "it": "it_CH", "fr": "fr_CH"}
 
 T = {
 "de": {
+ "top_label": "Nach oben",
+ "theme_label": "Hell oder dunkel umschalten",
  "title": "AVA-DAM · Webseiten, Software, Motion-Videos und interaktive Karten mit KI",
  "desc": "AVA-DAM baut Webseiten, Software, Motion-Videos und interaktive Karten. Die Ideen kommen von uns, umgesetzt wird mit KI. Aus Trimbach (Schweiz) und Grantown-on-Spey (Schottland).",
  "skip": "Zum Inhalt springen",
@@ -67,6 +69,8 @@ T = {
  "logo_alt": "AVA-DAM Logo, Human + Technology. Together.",
 },
 "en": {
+ "top_label": "Back to top",
+ "theme_label": "Switch light or dark mode",
  "title": "AVA-DAM · Websites, software, motion videos and interactive maps built with AI",
  "desc": "AVA-DAM builds websites, software, motion videos and interactive maps. The ideas are ours, the build is done with AI. Based in Trimbach (Switzerland) and Grantown-on-Spey (Scotland).",
  "skip": "Skip to content",
@@ -127,6 +131,8 @@ T = {
  "logo_alt": "AVA-DAM logo, Human + Technology. Together.",
 },
 "it": {
+ "top_label": "Torna su",
+ "theme_label": "Passa a chiaro o scuro",
  "title": "AVA-DAM · Siti web, software, video animati e mappe interattive con l'IA",
  "desc": "AVA-DAM crea siti web, software, video animati e mappe interattive. Le idee sono nostre, la realizzazione avviene con l'IA. Da Trimbach (Svizzera) e Grantown-on-Spey (Scozia).",
  "skip": "Vai al contenuto",
@@ -187,6 +193,8 @@ T = {
  "logo_alt": "Logo AVA-DAM, Human + Technology. Together.",
 },
 "fr": {
+ "top_label": "Retour en haut",
+ "theme_label": "Basculer entre clair et sombre",
  "title": "AVA-DAM · Sites web, logiciels, vidéos animées et cartes interactives avec l'IA",
  "desc": "AVA-DAM crée des sites web, des logiciels, des vidéos animées et des cartes interactives. Les idées viennent de nous, la réalisation se fait avec l'IA. Depuis Trimbach (Suisse) et Grantown-on-Spey (Écosse).",
  "skip": "Aller au contenu",

@@ -20,6 +20,54 @@ def url_of(lang):
 def e(s):
     return html.escape(s, quote=True)
 
+
+MOON = '<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>'
+SUN = '<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+
+# Drei Motive: Apfel (Human, Adams Apfel), Roboter (Technology), Stecker (Together)
+TOTOP = (
+ '<svg class="m-apfel" viewBox="0 0 64 64" aria-hidden="true">'
+ '<path d="M32 19C24 12 9 14 9 32c0 16 10 27 18 27 3 0 3.5-2 5-2s2 2 5 2c8 0 18-11 18-27 0-18-15-20-23-13z" fill="#D93A3A"/>'
+ '<path d="M32 19C24 12 9 14 9 32c0 16 10 27 18 27 3 0 3.5-2 5-2" fill="none" stroke="#A82525" stroke-width="1.5" opacity=".5"/>'
+ '<ellipse cx="19" cy="31" rx="3" ry="7" fill="#fff" opacity=".45" transform="rotate(15 19 31)"/>'
+ '<path d="M32 19c0-6 2-10 5-13" fill="none" stroke="#6B4423" stroke-width="3" stroke-linecap="round"/>'
+ '<path d="M35 12c4-8 13-8 16-5-4 7-12 8-16 5z" fill="#3FA34D"/>'
+ '<g class="bite" style="fill:var(--bg)"><circle cx="56" cy="29" r="6.5"/><circle cx="55" cy="39" r="6"/></g>'
+ '</svg>'
+ '<svg class="m-roboter" viewBox="0 0 64 64" aria-hidden="true">'
+ '<g class="flame"><path d="M22 58q3.5 16 7 0z" fill="#FF9F1C"/><path d="M35 58q3.5 16 7 0z" fill="#FF9F1C"/><path d="M23.5 58q2 9 4 0z" fill="#FFE066"/><path d="M36.5 58q2 9 4 0z" fill="#FFE066"/></g>'
+ '<line x1="32" y1="5" x2="32" y2="12" stroke="#101B35" stroke-width="2.5"/><circle cx="32" cy="5" r="3.5" fill="#3C82D9"/>'
+ '<rect x="13" y="12" width="38" height="25" rx="9" fill="#3C82D9" stroke="#FFFFFF" stroke-width="1.5"/>'
+ '<rect x="18.5" y="17" width="27" height="14" rx="6" fill="#101B35"/>'
+ '<circle cx="26" cy="24" r="3.2" fill="#7FE3FF"/><circle cx="38" cy="24" r="3.2" fill="#7FE3FF"/>'
+ '<rect x="11" y="40" width="6" height="11" rx="3" fill="#3C82D9" stroke="#FFFFFF" stroke-width="1.2"/><rect x="47" y="40" width="6" height="11" rx="3" fill="#3C82D9" stroke="#FFFFFF" stroke-width="1.2"/>'
+ '<rect x="19" y="38" width="26" height="17" rx="6" fill="#101B35" stroke="#FFFFFF" stroke-width="1.5"/>'
+ '<circle cx="32" cy="46.5" r="3.2" fill="#3C82D9"/>'
+ '<rect x="21.5" y="54" width="8" height="5" rx="2" fill="#101B35" stroke="#FFFFFF" stroke-width="1.2"/><rect x="34.5" y="54" width="8" height="5" rx="2" fill="#101B35" stroke="#FFFFFF" stroke-width="1.2"/>'
+ '</svg>'
+ '<svg class="m-stecker" viewBox="0 0 64 64" aria-hidden="true">'
+ '<g class="spark" stroke="#FFC233" stroke-width="2.5" stroke-linecap="round"><path d="M20 4l-4-4"/><path d="M44 4l4-4"/><path d="M32 1v-5"/></g>'
+ '<rect x="23" y="3" width="5" height="13" rx="1.5" fill="#C9D2E3" stroke="#8A95AB" stroke-width="1"/><rect x="36" y="3" width="5" height="13" rx="1.5" fill="#C9D2E3" stroke="#8A95AB" stroke-width="1"/>'
+ '<rect x="15" y="14" width="34" height="23" rx="7" fill="#3C82D9" stroke="#FFFFFF" stroke-width="1.5"/>'
+ '<path d="M22 22h20M22 28h20" stroke="#2A6CC0" stroke-width="2.5" stroke-linecap="round"/>'
+ '<path d="M24 37h16l-4 9h-8z" fill="#101B35" stroke="#FFFFFF" stroke-width="1.2" stroke-linejoin="round"/>'
+ '<path d="M32 46c0 7-7 8-7 13 0 3 3 5 7 7" fill="none" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round"/>'
+ '<path d="M32 46c0 7-7 8-7 13 0 3 3 5 7 7" fill="none" stroke="#101B35" stroke-width="6" stroke-linecap="round"/>'
+ '</svg>')
+
+JS = ("(function(){var b=document.getElementById('totop'),M=['apfel','roboter','stecker'];"
+ "b.setAttribute('data-motif',M[Math.floor(Math.random()*M.length)]);var busy=false;"
+ "function f(){if(busy)return;b.classList.toggle('show',window.scrollY>500)}"
+ "addEventListener('scroll',f,{passive:true});f();"
+ "b.addEventListener('click',function(){if(busy)return;"
+ "if(matchMedia('(prefers-reduced-motion: reduce)').matches){scrollTo(0,0);return}"
+ "busy=true;b.classList.add('go');"
+ "setTimeout(function(){scrollTo({top:0,behavior:'smooth'})},650);"
+ "setTimeout(function(){b.classList.remove('go','show');busy=false},2400)});"
+ "var t=document.getElementById('theme');t.addEventListener('click',function(){var r=document.documentElement;"
+ "var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');"
+ "var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('avadam-theme',n)}catch(e){}})})();")
+
 ANCHORS = ["bereiche", "projekte", "geschichte", "kontakt"]
 
 def jsonld(lang, t, r):
@@ -92,7 +140,7 @@ def page(lang):
         for key, name, tags, desc in t["projects"])
 
     videos = "".join(
-        f'<figure class="reel"><video controls playsinline preload="none" muted poster="{M}{key}-poster.jpg" width="720" height="1280" aria-label="{e(title)}">'
+        f'<figure class="reel"><video controls playsinline preload="none" poster="{M}{key}-poster.jpg" width="720" height="1280" aria-label="{e(title)}">'
         f'<source src="{M}{key}.mp4" type="video/mp4">{e(t["video_fallback"])}</video>'
         f'<figcaption><strong>{e(title)}</strong>{e(cap)}</figcaption></figure>'
         for key, title, cap in t["videos"])
@@ -124,7 +172,9 @@ def page(lang):
 <meta property="og:locale" content="{LOCALE[lang]}">
 {og_alt}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#101B35">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1020" media="(prefers-color-scheme: dark)">
+<script>try{{var m=localStorage.getItem("avadam-theme");if(m)document.documentElement.dataset.theme=m}}catch(e){{}}</script>
 <link rel="icon" href="{r}favicon.ico" sizes="32x32">
 <link rel="icon" href="{A}favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{A}apple-touch-icon.png">
@@ -139,8 +189,8 @@ def page(lang):
 <a class="skip" href="#inhalt">{e(t["skip"])}</a>
 <header class="top">
 <div class="wrap">
-<a class="brand" href="{r}{path_of(lang) or './'}" aria-label="AVA-DAM"><img src="{A}avadam-logo.svg" alt="{e(t["logo_alt"])}" width="668" height="126"></a>
-<div class="nav"><nav class="links nav" aria-label="Menu">{nav}</nav>{lang_links(lang, r, t["lang_label"])}</div>
+<a class="brand" href="{r}{path_of(lang) or './'}" aria-label="AVA-DAM"><img class="logo-light" src="{A}avadam-logo.svg" alt="{e(t["logo_alt"])}" width="668" height="126"><img class="logo-dark" src="{A}avadam-logo-dark.svg" alt="" aria-hidden="true" width="668" height="126"></a>
+<div class="nav"><nav class="links nav" aria-label="Menu">{nav}</nav><div class="right">{lang_links(lang, r, t["lang_label"])}<button type="button" class="theme" id="theme" aria-label="{e(t["theme_label"])}" title="{e(t["theme_label"])}">{MOON}{SUN}</button></div></div>
 </div>
 </header>
 
@@ -214,11 +264,13 @@ def page(lang):
 
 <footer>
 <div class="wrap">
-<img src="{A}avadam-logo.svg" alt="AVA-DAM" width="668" height="126" loading="lazy">
+<span><img class="logo-light" src="{A}avadam-logo.svg" alt="AVA-DAM" width="668" height="126" loading="lazy"><img class="logo-dark" src="{A}avadam-logo-dark.svg" alt="" aria-hidden="true" width="668" height="126" loading="lazy"></span>
 <span>{e(t["footer"])}</span>
 {lang_links(lang, r, t["lang_label"])}
 </div>
 </footer>
+<button type="button" class="totop" id="totop" aria-label="{e(t["top_label"])}" title="{e(t["top_label"])}">{TOTOP}</button>
+<script>{JS}</script>
 </body>
 </html>
 '''
