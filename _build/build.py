@@ -131,7 +131,7 @@ def page(lang):
         if key == "butterfly":
             return f'<div class="pic"><img src="{M}butterfly.jpg" alt="{e(name)}, Grantown-on-Spey" width="1280" height="800" loading="lazy" style="object-position:50% 60%"></div>'
         cls = "navy"
-        sub = "Swiss security software"
+        sub = "Swiss wedding films" if key == "avaf" else "Swiss security software"
         return f'<div class="pic type {cls}" aria-hidden="true"><span>{e(name)}<small>{e(sub)}</small></span></div>'
 
     projects = "".join(

@@ -35,6 +35,7 @@ T = {
  "projects": [
   ("vku", "VKU Oberbaselbiet", ["Webseite", "In Arbeit"], "Gemeinsame Webseite von acht Fahrlehrerinnen und Fahrlehrern für Verkehrskundeunterricht und Nothelferkurs. Termine, Lokale und Anmeldung an einem Ort."),
   ("butterfly", "Butterfly Cottage", ["Webseite"], "Webseite für ein Ferienhaus für zwei in Grantown-on-Spey, mitten im Cairngorms-Nationalpark. Persönlich, warm und mit direkter Buchung."),
+  ("avaf", "Adrian von Arb Films", ["Webseite"], "Webseite für Adis Hochzeitsfilme aus der Schweiz. Ruhig, dokumentarisch und ohne grosse Inszenierung, mit Ablauf, Kundenstimmen und FAQ. Komplett von Adrian selbst gestaltet und gebaut."),
   ("karte", "Grantown-Karte", ["Interaktive Karte"], "Über 50 Ausflugsziele rund um Grantown-on-Spey, die meisten unter 50 Minuten entfernt. Mit Fahrzeit, Kategorien und den Lieblingsorten der Gastgeber."),
   ("guardops", "GuardOpS", ["Software"], "Einsatzsoftware für kleine und mittlere Schweizer Sicherheitsdienste. Dienstplanung, Mitarbeiter-App, Kontrollgänge mit NFC oder Geofence, Kundenportal und Rechnungen mit QR-Einzahlungsschein."),
  ],
@@ -99,6 +100,7 @@ T = {
  "projects": [
   ("vku", "VKU Oberbaselbiet", ["Website", "Work in progress"], "A shared website for eight driving instructors offering traffic awareness and first aid courses. Dates, venues and sign-up in one place."),
   ("butterfly", "Butterfly Cottage", ["Website"], "Website for a holiday cottage for two in Grantown-on-Spey, right in the Cairngorms National Park. Personal, warm and with direct booking."),
+  ("avaf", "Adrian von Arb Films", ["Website"], "Website for Adi's wedding films from Switzerland. Calm, documentary and without big staging, with the process, couples' reviews and FAQ. Designed and built entirely by Adrian himself."),
   ("karte", "Grantown map", ["Interactive map"], "More than 50 places to visit around Grantown-on-Spey, most of them under 50 minutes away. With travel times, categories and the hosts' favourite spots."),
   ("guardops", "GuardOpS", ["Software"], "Operations software for small and medium-sized Swiss security companies. Shift planning, staff app, patrol checks with NFC or geofence, customer portal and invoices with Swiss QR bills."),
  ],
@@ -163,6 +165,7 @@ T = {
  "projects": [
   ("vku", "VKU Oberbaselbiet", ["Sito web", "In corso"], "Sito comune di otto maestre e maestri di guida per il corso di teoria della circolazione e il corso di primo soccorso. Date, sedi e iscrizione in un unico posto."),
   ("butterfly", "Butterfly Cottage", ["Sito web"], "Sito per una casa vacanze per due a Grantown-on-Spey, nel cuore del Parco Nazionale dei Cairngorms. Personale, accogliente e con prenotazione diretta."),
+  ("avaf", "Adrian von Arb Films", ["Sito web"], "Sito per i video di matrimonio di Adi dalla Svizzera. Tranquilli, documentaristici e senza grandi messe in scena, con lo svolgimento, le voci delle coppie e le FAQ. Ideato e realizzato interamente da Adrian."),
   ("karte", "Mappa di Grantown", ["Mappa interattiva"], "Oltre 50 mete intorno a Grantown-on-Spey, quasi tutte a meno di 50 minuti. Con tempi di percorrenza, categorie e i posti preferiti dei padroni di casa."),
   ("guardops", "GuardOpS", ["Software"], "Software operativo per piccole e medie aziende di sicurezza svizzere. Pianificazione dei turni, app per i collaboratori, giri di controllo con NFC o geofence, portale clienti e fatture con polizza QR."),
  ],
@@ -227,6 +230,7 @@ T = {
  "projects": [
   ("vku", "VKU Oberbaselbiet", ["Site web", "En cours"], "Site commun de huit moniteurs et monitrices d'auto-école pour le cours de sensibilisation au trafic et le cours de premiers secours. Dates, lieux et inscription au même endroit."),
   ("butterfly", "Butterfly Cottage", ["Site web"], "Site d'un cottage de vacances pour deux à Grantown-on-Spey, au cœur du parc national des Cairngorms. Personnel, chaleureux et avec réservation directe."),
+  ("avaf", "Adrian von Arb Films", ["Site web"], "Site pour les films de mariage d'Adi en Suisse. Calmes, documentaires et sans grande mise en scène, avec le déroulement, les avis des couples et une FAQ. Entièrement conçu et réalisé par Adrian lui-même."),
   ("karte", "Carte de Grantown", ["Carte interactive"], "Plus de 50 buts d'excursion autour de Grantown-on-Spey, la plupart à moins de 50 minutes. Avec temps de trajet, catégories et les lieux préférés des hôtes."),
   ("guardops", "GuardOpS", ["Logiciel"], "Logiciel d'exploitation pour les petites et moyennes entreprises de sécurité suisses. Planification des services, app pour les collaborateurs, rondes avec NFC ou géorepérage, portail client et factures avec QR-facture."),
  ],
@@ -269,4 +273,5 @@ PROJECT_URLS = {
  "butterfly": "https://www.butterfly-cottage.co.uk",
  "karte": "https://www.butterfly-cottage.co.uk/grantown/grantown-map.html",
  "guardops": "https://guardops.ch/",
+ "avaf": "https://adrianvonarbfilms.ch/",
 }
