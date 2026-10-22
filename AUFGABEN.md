@@ -13,7 +13,7 @@ Stand 21. Oktober 2026. Erledigtes abhaken (`[x]`).
 - [ ] Freigabe der Kunden: VKU Oberbaselbiet, Butterfly Cottage, Garden Park als Referenz zeigen?
 - [ ] Rechte an Musik und Bildern in den Motion-Videos klären.
 - [ ] Screenshots von Butterfly Cottage und GuardOpS liefern.
-- [ ] FAQ-Fragen sammeln.
+- [x] FAQ-Fragen sammeln.
 - [ ] Kontaktweg: nur E-Mail oder Kontaktformular (braucht externen Dienst)?
 - [ ] Besucherstatistik ja oder nein (wenn ja, ohne Cookies).
 - [ ] Social-Media-Links ja oder nein, welche?
@@ -26,7 +26,7 @@ Stand 21. Oktober 2026. Erledigtes abhaken (`[x]`).
 - [ ] Freigegebene Texte einbauen, alle vier Sprachen.
 - [ ] Impressum und Datenschutzerklärung in vier Sprachen (rechtliche Prüfung empfohlen).
 - [ ] E-Mail-Adresse einbauen.
-- [ ] FAQ ausformulieren, übersetzen, FAQPage-Schema ergänzen.
+- [x] FAQ ausformulieren, übersetzen, FAQPage-Schema ergänzen.
 - [ ] Fotos und Screenshots einbauen und optimieren.
 - [ ] Auf eigene Domain umstellen (BASE, CNAME, Links).
 - [ ] Google Search Console und Bing Webmaster anmelden (mit Dani).
