@@ -311,6 +311,9 @@ PROJECT_ROWS = [
  ["karte"],                      # Interaktive Karten
 ]
 
+# Eigene Seite pro Niederlassung, gleiche Reihenfolge wie "places" (Schweiz, Grossbritannien). None = noch keine.
+PLACE_URLS = ["https://www.formateins.ch/", None]
+
 PROJECT_URLS = {
  "vku": "https://avadam26.github.io/vku-entwurf/",
  "butterfly": "https://www.butterfly-cottage.co.uk",

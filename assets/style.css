@@ -151,6 +151,7 @@ section{padding:112px 0}
 .mono.b{background:var(--blue)}
 .person h3{margin:0}
 .place address{font-style:normal;margin-top:10px}
+.place .more{display:inline-block;margin-top:14px;font-weight:700;text-decoration:none}
 .place .country{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue-ink)}
 
 /* FAQ */

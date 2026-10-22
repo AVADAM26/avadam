@@ -8,7 +8,7 @@ AVADAM ist die gemeinsame Marke von **Adrian von Arb** (Adi) und **Daniel Muccio
 
 Der Name setzt sich aus unseren Namen zusammen (**A**drian **v**on **A**rb, **D**aniel **M**uccio) und wird wie „Adam“ ausgesprochen. Adam steht für den ersten Menschen. Von dort hat alles angefangen, auch die Ära der KI. AVADAM soll daran erinnern, woher wir kommen. Slogan: **Human + Technology. Together.**
 
-Standorte: Schweiz, 4632 Trimbach. Grossbritannien, Grantown-on-Spey PH26 3JN.
+Standorte: Schweiz, 4632 Trimbach (eigene Seite: https://www.formateins.ch/). Grossbritannien, Grantown-on-Spey PH26 3JN (eigene Seite folgt). AVADAM ist das Dach für alles, die Seiten der Niederlassungen werden bei den Standorten verlinkt (`PLACE_URLS` in `_build/content.py`).
 
 Diese Seite ist der erste Auftritt von AVADAM. Später kommen Tools und weitere Bereiche dazu.
 

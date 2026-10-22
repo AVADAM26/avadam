@@ -4,7 +4,7 @@ Aufruf aus dem Projektordner:  python3 _build/build.py
 Bei eigener Domain nur BASE anpassen und neu bauen.
 """
 import json, os, html
-from content import T, LANGS, LANG_NAMES, LOCALE, PROJECT_URLS, PROJECT_ROWS
+from content import T, LANGS, LANG_NAMES, LOCALE, PROJECT_URLS, PROJECT_ROWS, PLACE_URLS
 
 BASE = "https://avadam26.github.io/avadam/"
 TODAY = "2026-10-21"
@@ -155,8 +155,13 @@ def page(lang):
         for key, title, cap in t["videos"])
 
     story = "".join(f"<p>{p}</p>" for p in t["story"])
+    def place_link(u):
+        if not u: return ""
+        host = u.split("//")[1].removeprefix("www.").rstrip("/")
+        return f'<a class="more" href="{u}" target="_blank" rel="noopener">{e(host)} ↗</a>'
     places = "".join(f'<div class="card place"><span class="country">{e(c)}</span><h3 style="margin-top:12px">{e(n)}</h3>'
-                     f'<address>{e(a)}<br>{e(c)}</address></div>' for c, n, a in t["places"])
+                     f'<address>{e(a)}<br>{e(c)}</address>{place_link(u)}</div>'
+                     for (c, n, a), u in zip(t["places"], PLACE_URLS))
 
     return f'''<!doctype html>
 <html lang="{lang}">
