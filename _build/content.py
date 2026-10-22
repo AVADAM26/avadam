@@ -265,7 +265,7 @@ T = {
 }
 
 PROJECT_URLS = {
- "vku": "https://dmuccios24-oss.github.io/vku-entwurf/",
+ "vku": "https://avadam26.github.io/vku-entwurf/",
  "butterfly": "https://www.butterfly-cottage.co.uk",
  "karte": "https://www.butterfly-cottage.co.uk/grantown/grantown-map.html",
  "guardops": "https://guardops.ch/",
