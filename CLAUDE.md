@@ -25,6 +25,7 @@ media/              Videos, Posterbilder, Screenshots
 index.html, en/, it/, fr/   werden erzeugt, nie von Hand bearbeiten
 AUFGABEN.md         offene Punkte
 LOGBUCH.md          was wann geändert wurde
+_build/logbuch_seite.py   macht daraus die Leseseite fürs Artifact
 ```
 
 Nach jeder Änderung an Texten oder an `build.py` im Projektordner ausführen:
@@ -79,3 +80,4 @@ Die erzeugten HTML-Dateien werden mit committed, weil GitHub Pages sie direkt au
 - Kleine, verständliche Commits mit deutscher Beschreibung.
 - Offene Punkte stehen in `AUFGABEN.md`. Erledigtes dort abhaken.
 - Jede Änderung kommt ins `LOGBUCH.md`, zuoberst, mit Datum und wer es gemacht hat, die Kurznummer des Commits sobald sie bekannt ist. Auch kleine Änderungen. So sehen beide, was seit dem letzten Mal passiert ist, ohne die Git-Historie durchzugehen.
+- Danach `python3 _build/logbuch_seite.py` laufen lassen und das Artifact neu veröffentlichen, damit Adi den neusten Stand sieht, auch ohne GitHub. Das Logbuch gehört nicht auf die öffentliche Webseite.

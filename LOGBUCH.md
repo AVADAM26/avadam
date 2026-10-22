@@ -12,6 +12,9 @@ So führen wir es:
 
 ## 22. Oktober 2026
 
+**Logbuch als Leseseite für Adi** · Claude
+Neu macht `_build/logbuch_seite.py` aus dieser Datei eine Seite, die man einfach anklicken und lesen kann, damit Adi den Verlauf auch ohne GitHub-Zugang sieht. Farben, Schrift und Logo kommen aus `assets/style.css`, also nichts doppelt gepflegt. Hell/Dunkel-Schalter und Back-to-Top sind drin, wie auf der Webseite. Die Seite liegt bewusst nicht auf der öffentlichen Webseite, sondern als Artifact zum Teilen. Nach jeder Änderung am Logbuch den Generator laufen lassen und das Artifact neu veröffentlichen.
+
 **Motion-Videos waren zu hoch, korrigiert** · Claude
 Die beiden Videorahmen im Motion-Bereich waren gut doppelt so hoch wie gedacht, 320 auf 1280 Pixel statt 320 auf 569. Grund war die Höhenangabe im HTML der Videos, die sich gegen das Seitenverhältnis aus dem CSS durchgesetzt hat. Dadurch wurden die Posterbilder stark beschnitten, auf dem ersten Video fehlte der obere Teil, auf dem zweiten war die Schrift angeschnitten. Mit `height:auto` in `assets/style.css` stimmen die Rahmen wieder und sehen aus wie zwei Handys nebeneinander. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel Breite. Die Bilder auf der Seite waren nicht betroffen.
 
