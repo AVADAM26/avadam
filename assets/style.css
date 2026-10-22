@@ -98,8 +98,11 @@ section{padding:112px 0}
 .card p{margin:0;font-size:16px}
 
 /* Projekte */
-.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
-@media (max-width:800px){.projects{grid-template-columns:1fr}}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.projects+.projects{margin-top:28px}
+@media (max-width:1000px){.projects{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.projects{grid-template-columns:1fr}}
+.projects .proj .pic.type span{font-size:clamp(28px,3vw,40px)}
 .proj{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface);text-decoration:none;color:inherit;transition:transform .25s,box-shadow .25s}
 .proj:hover{transform:translateY(-4px);box-shadow:0 18px 40px var(--shadow);color:inherit}
 .proj .pic{aspect-ratio:16/10;background:var(--soft);overflow:hidden;position:relative}

@@ -268,6 +268,13 @@ T = {
 },
 }
 
+# Reihenfolge der Referenzen: je eine Zeile pro Bereich, maximal drei pro Zeile
+PROJECT_ROWS = [
+ ["vku", "butterfly", "avaf"],   # Webseiten
+ ["guardops"],                   # Software
+ ["karte"],                      # Interaktive Karten
+]
+
 PROJECT_URLS = {
  "vku": "https://avadam26.github.io/vku-entwurf/",
  "butterfly": "https://www.butterfly-cottage.co.uk",

@@ -4,7 +4,7 @@ Aufruf aus dem Projektordner:  python3 _build/build.py
 Bei eigener Domain nur BASE anpassen und neu bauen.
 """
 import json, os, html
-from content import T, LANGS, LANG_NAMES, LOCALE, PROJECT_URLS
+from content import T, LANGS, LANG_NAMES, LOCALE, PROJECT_URLS, PROJECT_ROWS
 
 BASE = "https://avadam26.github.io/avadam/"
 TODAY = "2026-10-21"
@@ -134,12 +134,16 @@ def page(lang):
         sub = "Swiss wedding films" if key == "avaf" else "Swiss security software"
         return f'<div class="pic type {cls}" aria-hidden="true"><span>{e(name)}<small>{e(sub)}</small></span></div>'
 
-    projects = "".join(
-        f'<a class="proj" href="{PROJECT_URLS[key]}" target="_blank" rel="noopener">{pic(key, name)}'
-        f'<div class="body"><div class="tags">' +
-        "".join(f'<span class="tag{" grey" if j else ""}">{e(tg)}</span>' for j, tg in enumerate(tags)) +
-        f'</div><h3>{e(name)}</h3><p>{e(desc)}</p><span class="more">{e(t["proj_more"])} ↗</span></div></a>'
-        for key, name, tags, desc in t["projects"])
+    def card(key, name, tags, desc):
+        return (f'<a class="proj" href="{PROJECT_URLS[key]}" target="_blank" rel="noopener">{pic(key, name)}'
+            f'<div class="body"><div class="tags">' +
+            "".join(f'<span class="tag{" grey" if j else ""}">{e(tg)}</span>' for j, tg in enumerate(tags)) +
+            f'</div><h3>{e(name)}</h3><p>{e(desc)}</p><span class="more">{e(t["proj_more"])} ↗</span></div></a>')
+    # Eine Zeile pro Bereich, je bis zu drei Referenzen: Webseiten, Software, Interaktive Karten
+    by_key = {p[0]: p for p in t["projects"]}
+    rows = [[k for k in row if k in by_key] for row in PROJECT_ROWS]
+    projects = '</div><div class="projects">'.join(
+        "".join(card(*by_key[k]) for k in row) for row in rows if row)
 
     videos = "".join(
         f'<figure class="reel"><video controls playsinline preload="none" poster="{M}{key}-poster.jpg" width="720" height="1280" aria-label="{e(title)}">'
