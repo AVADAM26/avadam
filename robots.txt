@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dmuccios24-oss.github.io/avadam/sitemap.xml
+Sitemap: https://avadam26.github.io/avadam/sitemap.xml

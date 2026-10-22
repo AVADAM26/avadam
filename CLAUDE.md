@@ -12,7 +12,7 @@ Standorte: Schweiz, 4632 Trimbach. Grossbritannien, Grantown-on-Spey PH26 3JN.
 
 Diese Seite ist der erste Auftritt von AVA-DAM. Später kommen Tools und weitere Bereiche dazu.
 
-- Vorschau: https://dmuccios24-oss.github.io/avadam/
+- Vorschau: https://avadam26.github.io/avadam/
 - Sprachen: Deutsch (Hauptordner), Englisch `/en/`, Italienisch `/it/`, Französisch `/fr/`
 
 ## Aufbau

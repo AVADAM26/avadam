@@ -27,7 +27,7 @@ AVA-DAM brings all of this together. We know day-to-day business life from the i
 - United Kingdom: Grantown-on-Spey PH26 3JN, Scotland
 
 ## Languages
-- [Deutsch](https://dmuccios24-oss.github.io/avadam/)
-- [English](https://dmuccios24-oss.github.io/avadam/en/)
-- [Italiano](https://dmuccios24-oss.github.io/avadam/it/)
-- [Français](https://dmuccios24-oss.github.io/avadam/fr/)
+- [Deutsch](https://avadam26.github.io/avadam/)
+- [English](https://avadam26.github.io/avadam/en/)
+- [Italiano](https://avadam26.github.io/avadam/it/)
+- [Français](https://avadam26.github.io/avadam/fr/)

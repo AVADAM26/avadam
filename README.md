@@ -2,7 +2,7 @@
 
 Webseite von AVA-DAM, Adrian von Arb und Daniel Muccio. Human + Technology. Together.
 
-Live: https://dmuccios24-oss.github.io/avadam/ (DE), /en/, /it/, /fr/
+Live: https://avadam26.github.io/avadam/ (DE), /en/, /it/, /fr/
 
 ## Texte ändern
 

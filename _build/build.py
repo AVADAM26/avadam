@@ -6,7 +6,7 @@ Bei eigener Domain nur BASE anpassen und neu bauen.
 import json, os, html
 from content import T, LANGS, LANG_NAMES, LOCALE, PROJECT_URLS
 
-BASE = "https://dmuccios24-oss.github.io/avadam/"
+BASE = "https://avadam26.github.io/avadam/"
 TODAY = "2026-10-21"
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)
