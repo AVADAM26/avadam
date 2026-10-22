@@ -19,7 +19,7 @@ AVA-DAM brings all of this together. We know day-to-day business life from the i
 ## Projects
 - [VKU Oberbaselbiet](https://avadam26.github.io/vku-entwurf/): A shared website for eight driving instructors offering traffic awareness and first aid courses. Dates, venues and sign-up in one place.
 - [Butterfly Cottage](https://www.butterfly-cottage.co.uk): Website for a holiday cottage for two in Grantown-on-Spey, right in the Cairngorms National Park. Personal, warm and with direct booking.
-- [Grantown map](https://www.butterfly-cottage.co.uk/grantown/grantown-map.html): More than 50 places to visit around Grantown-on-Spey, most of them under 90 minutes away. With travel times, categories and the hosts' favourite spots.
+- [Grantown map](https://www.butterfly-cottage.co.uk/grantown/grantown-map.html): More than 50 places to visit around Grantown-on-Spey, most of them under 50 minutes away. With travel times, categories and the hosts' favourite spots.
 - [GuardOpS](https://guardops.ch/): Operations software for small and medium-sized Swiss security companies. Shift planning, staff app, patrol checks with NFC or geofence, customer portal and invoices with Swiss QR bills.
 
 ## Locations
