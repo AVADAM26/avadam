@@ -8,7 +8,7 @@ Stand 21. Oktober 2026. Erledigtes abhaken (`[x]`).
 - [ ] E-Mail-Adresse festlegen. Eine gemeinsame oder je eine für Schweiz und UK?
 - [ ] Eigene Domain wählen und registrieren (z. B. avadam.ch, .com, .co.uk). Verfügbarkeit noch nicht geprüft.
 - [ ] Fotos ja oder nein. Portraits von Adi und Dani, sonst bleiben die Initialen.
-- [ ] Kurzbeschreibung pro Person, wer was macht.
+- [x] Kurzbeschreibung „Zu uns zwei“ (21.10. geliefert, eingebaut)
 - [ ] Firmenangaben fürs Impressum: Rechtsform, Firmenname, verantwortliche Person, vollständige Adressen. Strasse auf der Seite ja oder nein?
 - [ ] Freigabe der Kunden: VKU Oberbaselbiet, Butterfly Cottage, Garden Park als Referenz zeigen?
 - [ ] Rechte an Musik und Bildern in den Motion-Videos klären.

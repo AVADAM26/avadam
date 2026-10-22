@@ -237,6 +237,7 @@ def page(lang):
 <section id="team" class="areas" aria-labelledby="h-team">
 <div class="wrap">
 <div class="head"><span class="eyebrow">{e(t["team_eyebrow"])}</span><h2 id="h-team">{e(t["team_h2"])}</h2></div>
+<div class="about">{"".join(f"<p>{e(x)}</p>" for x in t["about"])}</div>
 <div class="duo">
 <div class="card person"><span class="mono" aria-hidden="true">AvA</span><h3>Adrian von Arb</h3></div>
 <div class="card person"><span class="mono b" aria-hidden="true">DM</span><h3>Daniel Muccio</h3></div>
@@ -290,7 +291,7 @@ def llms():
     lines = [f"# AVA-DAM", "", f"> {t['desc']}", "",
              "AVA-DAM is the joint label of Adrian von Arb and Daniel Muccio. The name is pronounced like \"Adam\": "
              "a reminder of the first human being, where everything began, including the age of AI. "
-             "Slogan: Human + Technology. Together.", "",
+             "Slogan: Human + Technology. Together.", "", "## About us", ""] + t["about"] + ["",
              "## What we do"] + [f"- {h}: {p}" for h, p in t["areas"]] + ["", "## Projects"] + \
             [f"- [{n}]({PROJECT_URLS[k]}): {d}" for k, n, _, d in t["projects"]] + \
             ["", "## Locations", "- Switzerland: 4632 Trimbach", "- United Kingdom: Grantown-on-Spey PH26 3JN, Scotland", "",

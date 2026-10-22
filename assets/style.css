@@ -233,3 +233,8 @@ footer .langs a{min-height:36px}
 @media (min-width:861px){.mpanel{display:none!important}}
 @media (max-width:420px){.burger{width:40px;height:40px}}
 section[id]{scroll-margin-top:72px}
+
+/* Zu uns zwei */
+.about{max-width:760px;margin:-16px 0 56px}
+.about p{margin:0 0 18px;font-size:18px}
+.about p:last-child{margin:0;font-weight:600;color:var(--ink)}
