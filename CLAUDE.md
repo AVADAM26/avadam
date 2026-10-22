@@ -1,16 +1,16 @@
-# AVA-DAM Webseite · Projektbeschreibung für Claude
+# AVADAM Webseite · Projektbeschreibung für Claude
 
 Diese Datei lesen, bevor am Projekt gearbeitet wird. Sie gilt für alle, die hier mitarbeiten, Mensch oder Claude.
 
 ## Worum es geht
 
-AVA-DAM ist die gemeinsame Marke von **Adrian von Arb** (Adi) und **Daniel Muccio** (Dani). Wir bauen Webseiten, Software und Tools, Motion-Videos und interaktive Karten. Die Ideen kommen von uns, umgesetzt wird mit KI.
+AVADAM ist die gemeinsame Marke von **Adrian von Arb** (Adi) und **Daniel Muccio** (Dani). Wir bauen Webseiten, Software und Tools, Motion-Videos und interaktive Karten. Die Ideen kommen von uns, umgesetzt wird mit KI.
 
-Der Name setzt sich aus unseren Namen zusammen (**A**drian **v**on **A**rb, **D**aniel **M**uccio) und wird wie „Adam“ ausgesprochen. Adam steht für den ersten Menschen. Von dort hat alles angefangen, auch die Ära der KI. AVA-DAM soll daran erinnern, woher wir kommen. Slogan: **Human + Technology. Together.**
+Der Name setzt sich aus unseren Namen zusammen (**A**drian **v**on **A**rb, **D**aniel **M**uccio) und wird wie „Adam“ ausgesprochen. Adam steht für den ersten Menschen. Von dort hat alles angefangen, auch die Ära der KI. AVADAM soll daran erinnern, woher wir kommen. Slogan: **Human + Technology. Together.**
 
 Standorte: Schweiz, 4632 Trimbach. Grossbritannien, Grantown-on-Spey PH26 3JN.
 
-Diese Seite ist der erste Auftritt von AVA-DAM. Später kommen Tools und weitere Bereiche dazu.
+Diese Seite ist der erste Auftritt von AVADAM. Später kommen Tools und weitere Bereiche dazu.
 
 - Vorschau: https://avadam26.github.io/avadam/
 - Sprachen: Deutsch (Hauptordner), Englisch `/en/`, Italienisch `/it/`, Französisch `/fr/`
@@ -43,6 +43,7 @@ Die erzeugten HTML-Dateien werden mit committed, weil GitHub Pages sie direkt au
 **Schreibstil.** Schweizer Schreibweise, immer „ss“, nie „ß“. Direkt, unkompliziert, freundlich, persönlich, eher gesprochen als akademisch. Kein Marketing-Deutsch, keine Superlative, keine KI-Floskeln. Wenige Gedankenstriche und Doppelpunkte, lieber Fliesstext als Aufzählungen. Englisch: britisch, natürlich, nicht steif. „Guest/Guests“ wird im Englischen bewusst gross geschrieben.
 
 **Corporate Identity.** Nicht verändern ohne Absprache.
+- Name in Texten immer **AVADAM**: zusammen und alles gross, ohne Bindestrich. Gilt für alle Texte, Titel, Meta-Daten, Alt-Texte, Mails und Projektbeschreibungen. Nur im Logo verbindet der Strich das A mit dem D, das ist Gestaltung und kein Bindestrich. Nie „AVA-DAM“, „Ava-Dam“ oder „AvaDam“ schreiben.
 - Dunkelblau `#101B35`, Blau `#3C82D9`, Weiss
 - Schrift Montserrat, lokal eingebunden unter `assets/fonts/` (kein Google-Fonts-Link, wegen Datenschutz)
 - Logo nur aus den Dateien verwenden: `assets/avadam-logo.svg` (hell) und `assets/avadam-logo-dark.svg` (dunkel). Die Wortmarke ist gezeichnet und keine Schrift, nie abtippen oder nachbauen.

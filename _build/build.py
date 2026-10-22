@@ -1,4 +1,4 @@
-"""Baut die statischen Seiten von AVA-DAM (DE im Stamm, EN/IT/FR in Unterordnern).
+"""Baut die statischen Seiten von AVADAM (DE im Stamm, EN/IT/FR in Unterordnern).
 
 Aufruf aus dem Projektordner:  python3 _build/build.py
 Bei eigener Domain nur BASE anpassen und neu bauen.
@@ -73,7 +73,7 @@ ANCHORS = ["bereiche", "projekte", "geschichte", "kontakt"]
 def jsonld(lang, t, r):
     org = {
         "@type": "Organization", "@id": BASE + "#org",
-        "name": "AVA-DAM", "alternateName": ["AVADAM", "AVA DAM"],
+        "name": "AVADAM", "alternateName": ["AVA-DAM", "AVA DAM"],
         "url": BASE, "logo": BASE + "assets/avadam-logo.svg", "image": BASE + "assets/og-image.png",
         "slogan": "Human + Technology. Together.",
         "description": T["en"]["desc"],
@@ -85,7 +85,7 @@ def jsonld(lang, t, r):
         "knowsAbout": ["Web design", "Websites", "Software development", "Motion design", "Interactive maps", "Artificial intelligence", "SEO"],
         "knowsLanguage": ["de", "en", "it", "fr"],
     }
-    site = {"@type": "WebSite", "@id": BASE + "#website", "url": BASE, "name": "AVA-DAM",
+    site = {"@type": "WebSite", "@id": BASE + "#website", "url": BASE, "name": "AVADAM",
             "inLanguage": LANGS, "publisher": {"@id": BASE + "#org"}}
     page = {"@type": "WebPage", "@id": url_of(lang) + "#page", "url": url_of(lang), "name": t["title"],
             "description": t["desc"], "inLanguage": lang, "isPartOf": {"@id": BASE + "#website"},
@@ -159,11 +159,11 @@ def page(lang):
 <title>{e(t["title"])}</title>
 <meta name="description" content="{e(t["desc"])}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="author" content="AVA-DAM · Adrian von Arb, Daniel Muccio">
+<meta name="author" content="AVADAM · Adrian von Arb, Daniel Muccio">
 <link rel="canonical" href="{url_of(lang)}">
 {alt}
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="AVA-DAM">
+<meta property="og:site_name" content="AVADAM">
 <meta property="og:title" content="{e(t["title"])}">
 <meta property="og:description" content="{e(t["desc"])}">
 <meta property="og:url" content="{url_of(lang)}">
@@ -191,7 +191,7 @@ def page(lang):
 <a class="skip" href="#inhalt">{e(t["skip"])}</a>
 <header class="top">
 <div class="wrap">
-<a class="brand" href="{r}{path_of(lang) or './'}" aria-label="AVA-DAM"><img class="logo-light" src="{A}avadam-logo.svg" alt="{e(t["logo_alt"])}" width="668" height="126"><img class="logo-dark" src="{A}avadam-logo-dark.svg" alt="" aria-hidden="true" width="668" height="126"></a>
+<a class="brand" href="{r}{path_of(lang) or './'}" aria-label="AVADAM"><img class="logo-light" src="{A}avadam-logo.svg" alt="{e(t["logo_alt"])}" width="668" height="126"><img class="logo-dark" src="{A}avadam-logo-dark.svg" alt="" aria-hidden="true" width="668" height="126"></a>
 <div class="nav"><nav class="links nav" aria-label="Menu">{nav}</nav><div class="right">{lang_links(lang, r, t["lang_label"])}<button type="button" class="theme" id="theme" aria-label="{e(t["theme_label"])}" title="{e(t["theme_label"])}">{MOON}{SUN}</button><button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="mmenu" aria-label="{e(t["menu_label"])}"><span></span><span></span><span></span></button></div></div>
 </div>
 <div class="mpanel" id="mmenu" hidden><nav class="mlinks" aria-label="{e(t["menu_label"])}">{nav}</nav>{lang_links(lang, r, t["lang_label"])}</div>
@@ -231,7 +231,7 @@ def page(lang):
 
 <section id="geschichte" aria-labelledby="h-story">
 <div class="wrap story">
-<div><span class="eyebrow">{e(t["story_eyebrow"])}</span><h2 id="h-story" style="margin-bottom:28px">{e(t["story_h2"]).replace("AVA-DAM", '<span style="white-space:nowrap">AVA-DAM</span>')}</h2>{story}<p class="big">{e(t["story_big"])}</p></div>
+<div><span class="eyebrow">{e(t["story_eyebrow"])}</span><h2 id="h-story" style="margin-bottom:28px">{e(t["story_h2"]).replace("AVADAM", '<span style="white-space:nowrap">AVADAM</span>')}</h2>{story}<p class="big">{e(t["story_big"])}</p></div>
 </div>
 </section>
 
@@ -267,7 +267,7 @@ def page(lang):
 
 <footer>
 <div class="wrap">
-<span><img class="logo-light" src="{A}avadam-logo.svg" alt="AVA-DAM" width="668" height="126" loading="lazy"><img class="logo-dark" src="{A}avadam-logo-dark.svg" alt="" aria-hidden="true" width="668" height="126" loading="lazy"></span>
+<span><img class="logo-light" src="{A}avadam-logo.svg" alt="AVADAM" width="668" height="126" loading="lazy"><img class="logo-dark" src="{A}avadam-logo-dark.svg" alt="" aria-hidden="true" width="668" height="126" loading="lazy"></span>
 <span>{e(t["footer"])}</span>
 {lang_links(lang, r, t["lang_label"])}
 </div>
@@ -289,8 +289,8 @@ def sitemap():
 
 def llms():
     t = T["en"]
-    lines = [f"# AVA-DAM", "", f"> {t['desc']}", "",
-             "AVA-DAM is the joint label of Adrian von Arb and Daniel Muccio. The name is pronounced like \"Adam\": "
+    lines = [f"# AVADAM", "", f"> {t['desc']}", "",
+             "AVADAM is the joint label of Adrian von Arb and Daniel Muccio. The name is pronounced like \"Adam\": "
              "a reminder of the first human being, where everything began, including the age of AI. "
              "Slogan: Human + Technology. Together.", "", "## About us", ""] + t["about"] + ["",
              "## What we do"] + [f"- {h}: {p}" for h, p in t["areas"]] + ["", "## Projects"] + \

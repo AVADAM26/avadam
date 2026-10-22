@@ -1,6 +1,6 @@
-# AVA-DAM
+# AVADAM
 
-Webseite von AVA-DAM, Adrian von Arb und Daniel Muccio. Human + Technology. Together.
+Webseite von AVADAM, Adrian von Arb und Daniel Muccio. Human + Technology. Together.
 
 Live: https://avadam26.github.io/avadam/ (DE), /en/, /it/, /fr/
 

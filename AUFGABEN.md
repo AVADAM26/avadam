@@ -1,4 +1,4 @@
-# Offene Aufgaben · AVA-DAM Webseite
+# Offene Aufgaben · AVADAM Webseite
 
 Stand 21. Oktober 2026. Erledigtes abhaken (`[x]`).
 
@@ -32,14 +32,14 @@ Stand 21. Oktober 2026. Erledigtes abhaken (`[x]`).
 - [ ] Google Search Console und Bing Webmaster anmelden (mit Dani).
 - [ ] Kontaktformular einrichten, falls gewünscht.
 - [ ] Schlusskontrolle vor dem Start: Ladezeit, Barrierefreiheit, Links, Handy, hell/dunkel.
-- [ ] Footer-Logo im VKU-Entwurf in Claude auf AVA-DAM verlinken.
+- [ ] Footer-Logo im VKU-Entwurf in Claude auf AVADAM verlinken.
 
 ## Erledigt
 
 - [x] Logo neu als Vektor gezeichnet (PNG, SVG, PDF)
 - [x] CI-Blatt als Word
 - [x] Logo auf der VKU-Seite ersetzt und verlinkt
-- [x] AVA-DAM Webseite, erste Version in vier Sprachen mit SEO-Grundlagen
+- [x] AVADAM Webseite, erste Version in vier Sprachen mit SEO-Grundlagen
 - [x] Hell/Dunkel-Modus und Back-to-Top mit drei Motiven
 - [x] Motion-Videos mit Ton
 - [x] Klappmenü auf dem Handy
