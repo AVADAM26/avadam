@@ -12,6 +12,9 @@ So führen wir es:
 
 ## 22. Oktober 2026
 
+**Motion-Videos waren zu hoch, korrigiert** · Claude
+Die beiden Videorahmen im Motion-Bereich waren gut doppelt so hoch wie gedacht, 320 auf 1280 Pixel statt 320 auf 569. Grund war die Höhenangabe im HTML der Videos, die sich gegen das Seitenverhältnis aus dem CSS durchgesetzt hat. Dadurch wurden die Posterbilder stark beschnitten, auf dem ersten Video fehlte der obere Teil, auf dem zweiten war die Schrift angeschnitten. Mit `height:auto` in `assets/style.css` stimmen die Rahmen wieder und sehen aus wie zwei Handys nebeneinander. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel Breite. Die Bilder auf der Seite waren nicht betroffen.
+
 **Logbuch angelegt** · Claude
 Diese Datei. Rückwirkend gefüllt mit allem, was seit dem Start passiert ist, damit Adi und Dani den Verlauf an einem Ort lesen können, ohne die Git-Historie durchzugehen. Die Regel dazu steht neu in `CLAUDE.md`, ein Hinweis darauf im `README.md`.
 
