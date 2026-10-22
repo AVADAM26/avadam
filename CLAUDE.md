@@ -24,6 +24,7 @@ assets/             style.css, Logos, Favicon, Schriften, Vorschaubild
 media/              Videos, Posterbilder, Screenshots
 index.html, en/, it/, fr/   werden erzeugt, nie von Hand bearbeiten
 AUFGABEN.md         offene Punkte
+LOGBUCH.md          was wann geändert wurde
 ```
 
 Nach jeder Änderung an Texten oder an `build.py` im Projektordner ausführen:
@@ -69,6 +70,7 @@ Die erzeugten HTML-Dateien werden mit committed, weil GitHub Pages sie direkt au
 - Breiten 320, 390, 768 und 1280 Pixel: nichts darf seitlich überstehen.
 - Hell und dunkel ansehen, alle vier Sprachen.
 - Keine Fehler in der Browser-Konsole.
+- Eintrag im `LOGBUCH.md` geschrieben.
 
 ## Zusammenarbeit
 
@@ -76,3 +78,4 @@ Die erzeugten HTML-Dateien werden mit committed, weil GitHub Pages sie direkt au
 - Kurz absprechen, wer woran arbeitet. Nicht gleichzeitig an derselben Datei.
 - Kleine, verständliche Commits mit deutscher Beschreibung.
 - Offene Punkte stehen in `AUFGABEN.md`. Erledigtes dort abhaken.
+- Jede Änderung kommt ins `LOGBUCH.md`, zuoberst, mit Datum und wer es gemacht hat, die Kurznummer des Commits sobald sie bekannt ist. Auch kleine Änderungen. So sehen beide, was seit dem letzten Mal passiert ist, ohne die Git-Historie durchzugehen.
