@@ -232,7 +232,6 @@ def page(lang):
 <section id="geschichte" aria-labelledby="h-story">
 <div class="wrap story">
 <div><span class="eyebrow">{e(t["story_eyebrow"])}</span><h2 id="h-story" style="margin-bottom:28px">{e(t["story_h2"]).replace("AVA-DAM", '<span style="white-space:nowrap">AVA-DAM</span>')}</h2>{story}<p class="big">{e(t["story_big"])}</p></div>
-<div class="adam" aria-hidden="true"><div class="name">AVA<b>DAM</b></div><div class="say">{e(t["say"])}</div><div class="slogan">HUMAN <span>+ TECHNOLOGY.</span> TOGETHER.</div></div>
 </div>
 </section>
 
