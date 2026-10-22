@@ -58,7 +58,7 @@ Die erzeugten HTML-Dateien werden mit committed, weil GitHub Pages sie direkt au
 - Pro Sprache eine eigene Seite mit `hreflang`, `canonical`, Meta-Beschreibung, Open-Graph-Daten.
 - Strukturierte Daten (JSON-LD) für Organisation, Webseite, Projekte und Videos.
 - `sitemap.xml`, `robots.txt` (alle Crawler erlaubt) und `llms.txt` werden vom Build erzeugt.
-- FAQ-Bereich ist vorbereitet. Das FAQPage-Schema erst einfügen, wenn echte Fragen und Antworten feststehen.
+- FAQ-Bereich „Was oft gefragt wird“ mit FAQPage-Schema. Fragen und Antworten in `faq_items` in `_build/content.py`, in allen vier Sprachen.
 - Jedes Bild mit sinnvollem Alt-Text, Überschriften in logischer Reihenfolge.
 - Bei eigener Domain nur `BASE` in `_build/build.py` anpassen und neu bauen.
 

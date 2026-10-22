@@ -100,8 +100,10 @@ def jsonld(lang, t, r):
              "thumbnailUrl": BASE + f"media/{key}-poster.jpg", "contentUrl": BASE + f"media/{key}.mp4",
              "uploadDate": TODAY, "inLanguage": "de", "creator": {"@id": BASE + "#org"}}
             for key, title, cap in t["videos"]]
-    # FAQPage-Schema erst einfügen, wenn echte Fragen und Antworten feststehen.
-    return json.dumps({"@context": "https://schema.org", "@graph": [org, site, page, works] + vids},
+    faq = {"@type": "FAQPage", "@id": page["@id"].replace("#page", "#faq"), "inLanguage": lang,
+           "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
+                          for q, a in t["faq_items"]]}
+    return json.dumps({"@context": "https://schema.org", "@graph": [org, site, page, works, faq] + vids},
                       ensure_ascii=False, indent=1)
 
 def lang_links(lang, r, label):
@@ -145,6 +147,7 @@ def page(lang):
     projects = '</div><div class="projects">'.join(
         "".join(card(*by_key[k]) for k in row) for row in rows if row)
 
+    faqs = "\n".join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in t["faq_items"])
     videos = "".join(
         f'<figure class="reel"><video controls playsinline preload="none" poster="{M}{key}-poster.jpg" width="720" height="1280" aria-label="{e(title)}">'
         f'<source src="{M}{key}.mp4" type="video/mp4">{e(t["video_fallback"])}</video>'
@@ -253,11 +256,13 @@ def page(lang):
 
 <section id="faq" class="faq" aria-labelledby="h-faq">
 <div class="wrap">
-<div class="head"><span class="eyebrow">{e(t["faq_eyebrow"])}</span><h2 id="h-faq">{e(t["faq_h2"])}</h2></div>
+<div class="faq-grid">
+<div class="faq-intro"><span class="eyebrow">{e(t["faq_eyebrow"])}</span><h2 id="h-faq">{e(t["faq_h2"])} <span class="accent">{e(t["faq_h2b"])}</span></h2>
+<p class="note">{e(t["faq_note"][0])}<a href="#kontakt">{e(t["faq_note"][1])}</a>{e(t["faq_note"][2])}</p></div>
 <div class="faq-list">
-<details><summary>{e(t["faq_q"])}</summary><p>{e(t["faq_a"])}</p></details>
+{faqs}
 </div>
-<p class="note">{e(t["faq_note"])}</p>
+</div>
 </div>
 </section>
 

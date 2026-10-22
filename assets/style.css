@@ -155,12 +155,18 @@ section{padding:112px 0}
 
 /* FAQ */
 .faq{background:var(--soft)}
-.faq-list{max-width:820px;border-top:1px solid var(--line)}
+.faq-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:72px;align-items:start}
+@media (max-width:900px){.faq-grid{grid-template-columns:1fr;gap:36px}}
+.faq-grid>*{min-width:0}
+.faq-intro h2 .accent{display:block;color:var(--blue)}
+.faq-intro .note{margin:24px 0 0}
+.faq-list{border-top:1px solid var(--line)}
 .faq-list details{border-bottom:1px solid var(--line);padding:6px 0}
 .faq-list summary{cursor:pointer;list-style:none;font-weight:700;color:var(--ink);font-size:18px;padding:18px 40px 18px 0;position:relative}
 .faq-list summary::-webkit-details-marker{display:none}
-.faq-list summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:28px;font-weight:500;color:var(--blue)}
-.faq-list details[open] summary::after{content:"–"}
+.faq-list summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:28px;font-weight:500;color:var(--blue);transition:transform .25s}
+.faq-list details[open] summary::after{transform:rotate(45deg)}
+@media (prefers-reduced-motion:reduce){.faq-list summary::after{transition:none}}
 .faq-list details p{margin:0 0 18px}
 .note{color:var(--muted);font-size:15px;margin-top:20px}
 
