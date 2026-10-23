@@ -22,6 +22,7 @@ AVADAM brings all of this together. We know day-to-day business life from the in
 - [Adrian von Arb Films](https://adrianvonarbfilms.ch/): Website for Adi's wedding films from Switzerland. Calm, documentary and without big staging, with the process, couples' reviews and FAQ. Designed and built entirely by Adrian himself.
 - [Grantown map](https://www.butterfly-cottage.co.uk/grantown/grantown-map.html): More than 50 places to visit around Grantown-on-Spey, most of them under 50 minutes away. With travel times, categories and the hosts' favourite spots.
 - [GuardOpS](https://guardops.ch/): Operations software for small and medium-sized Swiss security companies. Shift planning, staff app, patrol checks with NFC or geofence, customer portal and invoices with Swiss QR bills.
+- [Mein Tag](https://avadam26.github.io/avadam/media/meintag.mp4): A personal day planner with AI. Just dictate, snap a photo or email your appointments and ideas. With weather, travel times, push reminders and day, week and month at a glance.
 
 ## Locations
 - Switzerland: 4632 Trimbach

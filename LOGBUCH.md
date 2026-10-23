@@ -12,7 +12,10 @@ So führen wir es:
 
 ## 23. Oktober 2026
 
-**„Software“ heisst jetzt überall „Software und Tools“** · Claude für Dani
+**Neue Referenz „Mein Tag“ neben GuardOpS** · Claude für Dani
+Danis persönlicher Tagesplaner mit KI steht jetzt in der Zeile Software und Tools, gleich neben GuardOpS. Kategorie „Web-Software“ (englisch „Web tool“, italienisch „Strumento web“, französisch „Outil web“), Text in allen vier Sprachen. Das Bild ist das Schlussbild aus dem Demo-Video (`media/meintag.jpg`). „Ansehen“ öffnet das Demo-Video mit Musik (`media/meintag.mp4`), weil der Planer selbst privat ist.
+
+**„Software“ heisst jetzt überall „Software und Tools“** · Claude für Dani · `1fbc55b`
 Im Seitentitel, in der Beschreibung für Google, in der Zeile über der grossen Überschrift und im Einleitungstext steht jetzt „Software und Tools“ statt nur „Software“, in allen vier Sprachen (Software and tools, Software e strumenti, Logiciels et outils). So passen auch kleine Werkzeuge wie der Tagesplaner „Mein Tag“ dazu. Bei GuardOpS bleibt „Software“, das ist eine.
 
 **Arbeit aus Cloud-Sitzungen kommt immer in main** · Claude für Dani

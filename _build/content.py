@@ -38,6 +38,7 @@ T = {
   ("avaf", "Adrian von Arb Films", ["Webseite"], "Webseite für Adis Hochzeitsfilme aus der Schweiz. Ruhig, dokumentarisch und ohne grosse Inszenierung, mit Ablauf, Kundenstimmen und FAQ. Komplett von Adrian selbst gestaltet und gebaut."),
   ("karte", "Grantown-Karte", ["Interaktive Karte"], "Über 50 Ausflugsziele rund um Grantown-on-Spey, die meisten unter 50 Minuten entfernt. Mit Fahrzeit, Kategorien und den Lieblingsorten der Gastgeber."),
   ("guardops", "GuardOpS", ["Software"], "Einsatzsoftware für kleine und mittlere Schweizer Sicherheitsdienste. Dienstplanung, Mitarbeiter-App, Kontrollgänge mit NFC oder Geofence, Kundenportal und Rechnungen mit QR-Einzahlungsschein."),
+  ("meintag", "Mein Tag", ["Web-Software"], "Persönlicher Tagesplaner mit KI. Termine und Ideen einfach diktieren, fotografieren oder per Mail schicken. Mit Wetter, Fahrzeiten, Push-Erinnerungen und Tag, Woche und Monat auf einen Blick."),
  ],
  "motion_eyebrow": "Motion-Videos",
  "motion_h2": "Geschichten, die sich bewegen.",
@@ -112,6 +113,7 @@ T = {
   ("avaf", "Adrian von Arb Films", ["Website"], "Website for Adi's wedding films from Switzerland. Calm, documentary and without big staging, with the process, couples' reviews and FAQ. Designed and built entirely by Adrian himself."),
   ("karte", "Grantown map", ["Interactive map"], "More than 50 places to visit around Grantown-on-Spey, most of them under 50 minutes away. With travel times, categories and the hosts' favourite spots."),
   ("guardops", "GuardOpS", ["Software"], "Operations software for small and medium-sized Swiss security companies. Shift planning, staff app, patrol checks with NFC or geofence, customer portal and invoices with Swiss QR bills."),
+  ("meintag", "Mein Tag", ["Web tool"], "A personal day planner with AI. Just dictate, snap a photo or email your appointments and ideas. With weather, travel times, push reminders and day, week and month at a glance."),
  ],
  "motion_eyebrow": "Motion videos",
  "motion_h2": "Stories that move.",
@@ -186,6 +188,7 @@ T = {
   ("avaf", "Adrian von Arb Films", ["Sito web"], "Sito per i video di matrimonio di Adi dalla Svizzera. Tranquilli, documentaristici e senza grandi messe in scena, con lo svolgimento, le voci delle coppie e le FAQ. Ideato e realizzato interamente da Adrian."),
   ("karte", "Mappa di Grantown", ["Mappa interattiva"], "Oltre 50 mete intorno a Grantown-on-Spey, quasi tutte a meno di 50 minuti. Con tempi di percorrenza, categorie e i posti preferiti dei padroni di casa."),
   ("guardops", "GuardOpS", ["Software"], "Software operativo per piccole e medie aziende di sicurezza svizzere. Pianificazione dei turni, app per i collaboratori, giri di controllo con NFC o geofence, portale clienti e fatture con polizza QR."),
+  ("meintag", "Mein Tag", ["Strumento web"], "Agenda personale con l'IA. Appuntamenti e idee si dettano, si fotografano o si mandano per e-mail. Con meteo, tempi di viaggio, promemoria push e giorno, settimana e mese a colpo d'occhio."),
  ],
  "motion_eyebrow": "Video animati",
  "motion_h2": "Storie che si muovono.",
@@ -260,6 +263,7 @@ T = {
   ("avaf", "Adrian von Arb Films", ["Site web"], "Site pour les films de mariage d'Adi en Suisse. Calmes, documentaires et sans grande mise en scène, avec le déroulement, les avis des couples et une FAQ. Entièrement conçu et réalisé par Adrian lui-même."),
   ("karte", "Carte de Grantown", ["Carte interactive"], "Plus de 50 buts d'excursion autour de Grantown-on-Spey, la plupart à moins de 50 minutes. Avec temps de trajet, catégories et les lieux préférés des hôtes."),
   ("guardops", "GuardOpS", ["Logiciel"], "Logiciel d'exploitation pour les petites et moyennes entreprises de sécurité suisses. Planification des services, app pour les collaborateurs, rondes avec NFC ou géorepérage, portail client et factures avec QR-facture."),
+  ("meintag", "Mein Tag", ["Outil web"], "Agenda personnel avec l'IA. Rendez-vous et idées se dictent, se photographient ou s'envoient par e-mail. Avec météo, temps de trajet, rappels push et jour, semaine et mois en un coup d'œil."),
  ],
  "motion_eyebrow": "Vidéos animées",
  "motion_h2": "Des histoires qui bougent.",
@@ -307,7 +311,7 @@ T = {
 # Reihenfolge der Referenzen: je eine Zeile pro Bereich, maximal drei pro Zeile
 PROJECT_ROWS = [
  ["vku", "butterfly", "avaf"],   # Webseiten
- ["guardops"],                   # Software
+ ["guardops", "meintag"],       # Software und Tools
  ["karte"],                      # Interaktive Karten
 ]
 
@@ -319,5 +323,6 @@ PROJECT_URLS = {
  "butterfly": "https://www.butterfly-cottage.co.uk",
  "karte": "https://www.butterfly-cottage.co.uk/grantown/grantown-map.html",
  "guardops": "https://guardops.ch/",
+ "meintag": "https://avadam26.github.io/avadam/media/meintag.mp4",
  "avaf": "https://adrianvonarbfilms.ch/",
 }

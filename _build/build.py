@@ -92,8 +92,8 @@ def jsonld(lang, t, r):
             "about": {"@id": BASE + "#org"}, "primaryImageOfPage": BASE + "assets/og-image.png"}
     works = {"@type": "ItemList", "name": t["proj_h2"], "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "item": {
-            "@type": "SoftwareApplication" if key == "guardops" else "CreativeWork",
-            **({"applicationCategory": "BusinessApplication", "operatingSystem": "Web"} if key == "guardops" else {}),
+            "@type": "SoftwareApplication" if key in ("guardops", "meintag") else "CreativeWork",
+            **({"applicationCategory": "BusinessApplication" if key == "guardops" else "LifestyleApplication", "operatingSystem": "Web"} if key in ("guardops", "meintag") else {}),
             "name": name, "description": desc, "url": PROJECT_URLS[key], "creator": {"@id": BASE + "#org"}}}
         for i, (key, name, tags, desc) in enumerate(t["projects"])]}
     vids = [{"@type": "VideoObject", "name": f"{title} · Garden Park Guest House", "description": cap,
@@ -130,6 +130,8 @@ def page(lang):
             return f'<div class="pic"><img src="{M}vku.jpg" alt="{e(name)}" width="1280" height="800" loading="lazy"></div>'
         if key == "karte":
             return f'<div class="pic"><img src="{M}karte-poster.jpg" alt="{e(name)}" width="720" height="1280" loading="lazy" style="object-position:50% 40%"></div>'
+        if key == "meintag":
+            return f'<div class="pic"><img src="{M}meintag.jpg" alt="{e(name)}" width="1280" height="800" loading="lazy" style="object-position:50% 50%"></div>'
         if key == "butterfly":
             return f'<div class="pic"><img src="{M}butterfly.jpg" alt="{e(name)}, Grantown-on-Spey" width="1280" height="800" loading="lazy" style="object-position:50% 60%"></div>'
         cls = "navy"
@@ -141,7 +143,7 @@ def page(lang):
             f'<div class="body"><div class="tags">' +
             "".join(f'<span class="tag{" grey" if j else ""}">{e(tg)}</span>' for j, tg in enumerate(tags)) +
             f'</div><h3>{e(name)}</h3><p>{e(desc)}</p><span class="more">{e(t["proj_more"])} ↗</span></div></a>')
-    # Eine Zeile pro Bereich, je bis zu drei Referenzen: Webseiten, Software, Interaktive Karten
+    # Eine Zeile pro Bereich, je bis zu drei Referenzen: Webseiten, Software und Tools, Interaktive Karten
     by_key = {p[0]: p for p in t["projects"]}
     rows = [[k for k in row if k in by_key] for row in PROJECT_ROWS]
     projects = '</div><div class="projects">'.join(

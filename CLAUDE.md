@@ -64,7 +64,7 @@ Die erzeugten HTML-Dateien werden mit committed, weil GitHub Pages sie direkt au
 - Jedes Bild mit sinnvollem Alt-Text, Überschriften in logischer Reihenfolge.
 - Bei eigener Domain nur `BASE` in `_build/build.py` anpassen und neu bauen.
 
-**Referenzen.** Ziel sind 3 × 3 Referenzen: eine Zeile Webseiten, eine Zeile Software, eine Zeile Interaktive Karten, je bis zu drei. Reihenfolge in `PROJECT_ROWS` in `_build/content.py`.
+**Referenzen.** Ziel sind 3 × 3 Referenzen: eine Zeile Webseiten, eine Zeile Software und Tools, eine Zeile Interaktive Karten, je bis zu drei. Reihenfolge in `PROJECT_ROWS` in `_build/content.py`.
 
 **Kein Tracking, keine Cookies** ohne ausdrückliches Okay von Adi und Dani.
 
