@@ -78,4 +78,8 @@ Die erzeugten HTML-Dateien werden mit committed, weil GitHub Pages sie direkt au
 - Vor dem Arbeiten immer zuerst den neusten Stand holen (`git pull`).
 - Kurz absprechen, wer woran arbeitet. Nicht gleichzeitig an derselben Datei.
 - Kleine, verständliche Commits mit deutscher Beschreibung.
+- **Commits immer im Namen der Person, die gerade arbeitet**, nie nur als „claude“. Nur so erscheint sie auf GitHub bei den Contributors. Vor dem ersten Commit `git config user.name` und `git config user.email` im Repo entsprechend setzen. Ist unklar, wer arbeitet, kurz fragen.
+  - Dani: `scotlandbydan` mit der Noreply-Adresse `317312833+dmuccios24-oss@users.noreply.github.com`, nie mit seiner Gmail-Adresse. Sonst blockt GitHub den Push.
+  - Adi: sein GitHub-Benutzername mit seiner eigenen Noreply-Adresse (GitHub → Settings → Emails, Form `ZAHL+benutzername@users.noreply.github.com`). Hier eintragen, sobald bekannt.
+  - Gilt in allen Projekten.
 - Offene Punkte stehen in `AUFGABEN.md`. Erledigtes dort abhaken.
