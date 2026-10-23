@@ -12,7 +12,10 @@ So führen wir es:
 
 ## 23. Oktober 2026
 
-**Neue Referenz „Mein Tag“ neben GuardOpS** · Claude für Dani
+**Neues Demo-Video für „Mein Tag“** · Claude für Dani
+`media/meintag.mp4` ersetzt durch das neue Demo-Video (1:49) mit Danis Stimme und Rocco's Musik. Neu mit der Mail-Szene (Termin aus dem Büro per Mail) und dem Fussballer, der den Ball nach oben kickt. Ohne Untertitel.
+
+**Neue Referenz „Mein Tag“ neben GuardOpS** · Claude für Dani · `af4329d`
 Danis persönlicher Tagesplaner mit KI steht jetzt in der Zeile Software und Tools, gleich neben GuardOpS. Kategorie „Web-Software“ (englisch „Web tool“, italienisch „Strumento web“, französisch „Outil web“), Text in allen vier Sprachen. Das Bild ist das Schlussbild aus dem Demo-Video (`media/meintag.jpg`). „Ansehen“ öffnet das Demo-Video mit Musik (`media/meintag.mp4`), weil der Planer selbst privat ist.
 
 **„Software“ heisst jetzt überall „Software und Tools“** · Claude für Dani · `1fbc55b`
