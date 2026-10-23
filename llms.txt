@@ -1,6 +1,6 @@
 # AVADAM
 
-> AVADAM builds websites, software, motion videos and interactive maps. The ideas are ours, the build is done with AI. Based in Trimbach (Switzerland) and Grantown-on-Spey (Scotland).
+> AVADAM builds websites, software and tools, motion videos and interactive maps. The ideas are ours, the build is done with AI. Based in Trimbach (Switzerland) and Grantown-on-Spey (Scotland).
 
 AVADAM is the joint label of Adrian von Arb and Daniel Muccio. The name is pronounced like "Adam": a reminder of the first human being, where everything began, including the age of AI. Slogan: Human + Technology. Together.
 

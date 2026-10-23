@@ -12,6 +12,9 @@ So führen wir es:
 
 ## 23. Oktober 2026
 
+**„Software“ heisst jetzt überall „Software und Tools“** · Claude für Dani
+Im Seitentitel, in der Beschreibung für Google, in der Zeile über der grossen Überschrift und im Einleitungstext steht jetzt „Software und Tools“ statt nur „Software“, in allen vier Sprachen (Software and tools, Software e strumenti, Logiciels et outils). So passen auch kleine Werkzeuge wie der Tagesplaner „Mein Tag“ dazu. Bei GuardOpS bleibt „Software“, das ist eine.
+
 **Arbeit aus Cloud-Sitzungen kommt immer in main** · Claude für Dani
 Neue Regel in `CLAUDE.md`. Sitzungen in der Cloud arbeiten auf einem eigenen Zweig `claude/…`. Am Ende jeder Sitzung wird die Arbeit jetzt in `main` übernommen, sonst kommt sie nie auf die Live-Seite. Bei der Gelegenheit Adis Zweig vom 22. Oktober (Logbuch, Leseseite, Videorahmen) in `main` übernommen. Die Korrektur der Videorahmen war in `main` schon drin, dort gilt die neuere Fassung.
 
