@@ -10,6 +10,11 @@ So führen wir es:
 - Geschrieben wird so, dass man es in einem halben Jahr noch versteht. Keine Abkürzungen, keine Fachbegriffe ohne Erklärung.
 - Offene Punkte gehören nicht hierhin, die stehen in `AUFGABEN.md`.
 
+## 30. Oktober 2026
+
+**Drittes Motion-Video „That's it from us“** · Claude für Dani
+Neues Video zum Saisonende 2026 für das Garden Park Guest House, mit echten Fotos und Videos aus dem Haus (49 Sekunden, mit Ton). Steht als drittes Video neben „Highlands“ und der interaktiven Karte, in allen vier Sprachen. Der Einleitungstext sagt jetzt „Drei Beispiele“ statt „Zwei“. Video für die Webseite verkleinert auf 720 × 1280 (`media/saisonende.mp4`), Posterbild aus der ersten Szene (`media/saisonende-poster.jpg`).
+
 ## 23. Oktober 2026
 
 **Neues Demo-Video für „Mein Tag“** · Claude für Dani
