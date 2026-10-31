@@ -153,7 +153,9 @@ def page(lang):
     videos = "".join(
         f'<figure class="reel"><video controls playsinline preload="none" poster="{M}{key}-poster.jpg" width="720" height="1280" aria-label="{e(title)}">'
         f'<source src="{M}{key}.mp4" type="video/mp4">{e(t["video_fallback"])}</video>'
-        f'<figcaption><strong>{e(title)}</strong>{e(cap)}</figcaption></figure>'
+        f'<figcaption><strong>{e(title)}</strong>{e(cap)}'
+        + (f'<span class="note">{e(t.get("video_notes", {}).get(key, ""))}</span>' if t.get("video_notes", {}).get(key) else '')
+        + '</figcaption></figure>'
         for key, title, cap in t["videos"])
 
     story = "".join(f"<p>{p}</p>" for p in t["story"])

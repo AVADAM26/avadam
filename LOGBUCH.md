@@ -10,9 +10,14 @@ So führen wir es:
 - Geschrieben wird so, dass man es in einem halben Jahr noch versteht. Keine Abkürzungen, keine Fachbegriffe ohne Erklärung.
 - Offene Punkte gehören nicht hierhin, die stehen in `AUFGABEN.md`.
 
+## 31. Oktober 2026
+
+**Interaktive Karte jetzt auf Englisch, Sprachhinweis bei den Videos** · Claude für Dani
+Das Video zur interaktiven Karte ist jetzt die englische Fassung (gesprochen und Schrift auf Englisch), auf allen vier Sprachseiten. `media/karte.mp4` und das Posterbild `media/karte-poster.jpg` ersetzt, die deutsche Fassung liegt bei Dani auf der externen Platte. Unter „Highlands“ und der Karte steht neu ein kleiner Hinweis, in welcher Sprache gesprochen wird und dass es die andere Sprache auch gibt, in allen vier Sprachen (`video_notes` in `_build/content.py`, Stil `.reel figcaption .note`).
+
 ## 30. Oktober 2026
 
-**Drittes Motion-Video „That's it from us“** · Claude für Dani
+**Drittes Motion-Video „That's it from us“** · Claude für Dani · `1aaf1c8`
 Neues Video zum Saisonende 2026 für das Garden Park Guest House, mit echten Fotos und Videos aus dem Haus (49 Sekunden, mit Ton). Steht als drittes Video neben „Highlands“ und der interaktiven Karte, in allen vier Sprachen. Der Einleitungstext sagt jetzt „Drei Beispiele“ statt „Zwei“. Video für die Webseite verkleinert auf 720 × 1280 (`media/saisonende.mp4`), Posterbild aus der ersten Szene (`media/saisonende-poster.jpg`).
 
 ## 23. Oktober 2026
