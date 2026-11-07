@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 7. November 2026
 
-**Neuer Bereich „Interaktive Spots“ auf der Webseite, zweites Beispiel umbenannt** · Claude für Dani
+**Neuer Bereich „Interaktive Spots“ auf der Webseite, zweites Beispiel umbenannt** · Claude für Dani · `07cf81b`
 Auf der Startseite gibt es nach den Motion-Videos einen neuen Abschnitt „Neu: Interaktive Spots“ (`#spots`) in allen vier Sprachen. Zwei Karten mit Vorschaubild und Link zum Ausprobieren: „Der Spot“ für neue Kunden und „Der Spot mit Termin“ für die Webseite eines Kunden. Dazu eine neue FAQ-Frage „Was ist ein interaktiver Spot?“. Texte in `_build/content.py` (`spots_…` und `faq_items`), Vorlage in `_build/build.py`, Stil in `assets/style.css`, Bilder `media/spot-1.jpg` und `media/spot-2.jpg`. Das zweite Beispiel heisst neu „Muster Kosmetik“ mit Sarah statt makellos und Dayana und liegt unter `spot/kosmetik/`. Alle echten Angaben (Name, Telefon, Mail, WhatsApp, Hinweise auf die offizielle Seite) sind raus, Adresse und Nummer sind erfunden.
 
 **Zweites Beispiel: Spot mit Task für makellos Naturkosmetik** · Claude für Dani · `87de340`
