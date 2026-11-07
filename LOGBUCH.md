@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 7. November 2026
 
-**Zweites Beispiel: Spot mit Task für makellos Naturkosmetik** · Claude für Dani
+**Zweites Beispiel: Spot mit Task für makellos Naturkosmetik** · Claude für Dani · `87de340`
 Neue Seite `spot/makellos/`, ein Entwurf für die Webseite von Dayana Probst (makellos Naturkosmetik), mit Angebot, Über mich, Terminbuchung und Kontakt. Alle Angaben zu Behandlungen, Preisen, Öffnungszeiten und Kontakt stammen von makellos-naturkosmetik.ch. Mittendrin Dayanas Spot: sie stellt sich vor und stellt vier Fragen (Thema, je nach Thema eine eigene zweite Frage, Pflege heute, allein oder zu zweit). Danach gibt es eine Auswertung mit passender Behandlung, Dauer, Preis und Hinweisen, die man drucken, als PDF oder als Bild aufs Handy speichern kann. Am Schluss wählt man zwischen online buchen (Behandlung ist schon vorausgewählt, Zeiten richten sich nach den Öffnungszeiten), Rückruf oder vorbeikommen. Formulare verschicken nichts. Die Studio-Adresse fehlt noch, auf ihrer Seite steht einmal Olten und einmal Hünenberg (`ADDR` im Skript). Dayana ist gezeichnet, keine Fotos von ihrer Seite übernommen. DE, EN, IT, hell/dunkel, Klappmenü, Back-to-Top mit Nagellack oder Pipettenfläschchen. Vom ersten Spot aus oben verlinkt.
 
 **Spot: Musik von Rocco drin, lebendigere Stimme, Sprecher-Skript** · Claude für Dani · `b30175b`
