@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="../assets/style.css">
 <style>
 /* Spot · eigene Teile, Farben aus style.css */
+.draft a{color:inherit}
 .draft{background:var(--tagbg);color:var(--blue-ink);font-size:13px;font-weight:700;letter-spacing:.04em;text-align:center;padding:8px 16px}
 .top .right{display:flex;align-items:center;gap:8px}
 .slangs{display:flex;gap:4px}
@@ -155,7 +156,7 @@ form textarea{min-height:130px;resize:vertical}
 </style>
 </head>
 <body>
-<p class="draft" data-i="draft">Entwurf · Beispiel Massagestudio · nur für Adi und Dani</p>
+<p class="draft"><span data-i="draft">Entwurf · Beispiel Massagestudio · nur für Adi und Dani</span> · <a href="makellos/" data-i="ex2">Zweites Beispiel: makellos</a></p>
 <header class="top">
 <div class="wrap">
 <a class="brand" href="../" aria-label="AVADAM"><img class="logo-light" src="../assets/avadam-logo.svg" alt="AVADAM Logo, Human + Technology. Together." width="668" height="126"><img class="logo-dark" src="../assets/avadam-logo-dark.svg" alt="" aria-hidden="true" width="668" height="126"></a>
@@ -351,7 +352,7 @@ form textarea{min-height:130px;resize:vertical}
 <script>
 (function(){
 var T={
-de:{draft:"Entwurf · Beispiel Massagestudio · nur für Adi und Dani",eyebrow:"Interaktiver Spot",h1:"Ein Video, das zurückfragt.",lead:"Schau dir den Spot an. Er dauert etwa eine Minute und stellt dir unterwegs vier kurze Fragen.",play:"Spot abspielen",startnote:"Mit Ton ist es schöner. Etwa 1 Minute.",skip:"Spot überspringen",voice:"Stimme",music:"Musik",credit:"Musik",pause:"Pause",resume:"Weiter",q:"Massage",
+de:{draft:"Entwurf · Beispiel Massagestudio · nur für Adi und Dani",ex2:"Zweites Beispiel: makellos",eyebrow:"Interaktiver Spot",h1:"Ein Video, das zurückfragt.",lead:"Schau dir den Spot an. Er dauert etwa eine Minute und stellt dir unterwegs vier kurze Fragen.",play:"Spot abspielen",startnote:"Mit Ton ist es schöner. Etwa 1 Minute.",skip:"Spot überspringen",voice:"Stimme",music:"Musik",credit:"Musik",pause:"Pause",resume:"Weiter",q:"Massage",
 s1:"Das ist Lena. Sie hat ein kleines Massagestudio, und wer einmal bei ihr war, kommt wieder.",
 s2:"Nur, neue Kundschaft findet kaum zu ihr. Die meisten suchen zuerst im Internet.",
 s3:"Und dort sieht man von Lena fast nichts. Also scrollen die Leute einfach weiter.",
@@ -370,7 +371,7 @@ how_h:"So würde es laufen",how_1:"Jeder Kunde bekommt seinen eigenen Spot mit s
 r_web:"Webseite",r_map:"Interaktive Karte",r_vid:"Motion-Video",
 refs:{vku:"Gemeinsame Webseite von acht Fahrlehrerinnen und Fahrlehrern. Termine, Lokale und Anmeldung an einem Ort.",butterfly:"Ferienhaus für zwei in Grantown-on-Spey. Persönlich, warm und mit direkter Buchung.",karte:"Über 50 Ausflugsziele rund um Grantown-on-Spey, mit Fahrzeit und Lieblingsorten der Gastgeber.",highlands:"Stell dir vor … ein Abend in den Highlands. Für das Garden Park Guest House."},
 title:"Interaktiver Spot · AVADAM",theme:"Hell oder dunkel umschalten",voiceLang:"de-CH"},
-en:{draft:"Draft · example massage studio · for Adi and Dani only",eyebrow:"Interactive spot",h1:"A video that asks you back.",lead:"Have a look at the spot. It takes about a minute and asks you four quick questions along the way.",play:"Play the spot",startnote:"Better with sound. About 1 minute.",skip:"Skip the spot",voice:"Voice",music:"Music",credit:"Music by",pause:"Pause",resume:"Play",q:"Massage",
+en:{draft:"Draft · example massage studio · for Adi and Dani only",ex2:"Second example: makellos",eyebrow:"Interactive spot",h1:"A video that asks you back.",lead:"Have a look at the spot. It takes about a minute and asks you four quick questions along the way.",play:"Play the spot",startnote:"Better with sound. About 1 minute.",skip:"Skip the spot",voice:"Voice",music:"Music",credit:"Music by",pause:"Pause",resume:"Play",q:"Massage",
 s1:"This is Lena. She runs a small massage studio, and anyone who's been once comes back.",
 s2:"The thing is, new customers hardly ever find her. Most people search online first.",
 s3:"And there, you can barely see Lena at all. So people just keep scrolling.",
@@ -389,7 +390,7 @@ how_h:"How it would work",how_1:"Every client gets their own spot, with their st
 r_web:"Website",r_map:"Interactive map",r_vid:"Motion video",
 refs:{vku:"Shared website for eight driving instructors. Dates, venues and booking in one place.",butterfly:"Holiday cottage for two in Grantown-on-Spey. Personal, warm and with direct booking.",karte:"Over 50 places to visit around Grantown-on-Spey, with driving times and the hosts' favourites.",highlands:"Imagine … an evening in the Highlands. For the Garden Park Guest House."},
 title:"Interactive spot · AVADAM",theme:"Switch light or dark",voiceLang:"en-GB"},
-it:{draft:"Bozza · esempio studio di massaggi · solo per Adi e Dani",eyebrow:"Spot interattivo",h1:"Un video che ti fa domande.",lead:"Guarda lo spot. Dura circa un minuto e strada facendo ti fa quattro domande veloci.",play:"Guarda lo spot",startnote:"Meglio con l'audio. Circa 1 minuto.",skip:"Salta lo spot",voice:"Voce",music:"Musica",credit:"Musica",pause:"Pausa",resume:"Avanti",q:"Massaggi",
+it:{draft:"Bozza · esempio studio di massaggi · solo per Adi e Dani",ex2:"Secondo esempio: makellos",eyebrow:"Spot interattivo",h1:"Un video che ti fa domande.",lead:"Guarda lo spot. Dura circa un minuto e strada facendo ti fa quattro domande veloci.",play:"Guarda lo spot",startnote:"Meglio con l'audio. Circa 1 minuto.",skip:"Salta lo spot",voice:"Voce",music:"Musica",credit:"Musica",pause:"Pausa",resume:"Avanti",q:"Massaggi",
 s1:"Questa è Lena. Ha un piccolo studio di massaggi, e chi ci è stato una volta ci torna.",
 s2:"Solo che i nuovi clienti la trovano a fatica. Quasi tutti cercano prima su internet.",
 s3:"E lì di Lena non si vede quasi niente. Così la gente continua a scorrere.",
