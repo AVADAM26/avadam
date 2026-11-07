@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 7. November 2026
 
-**Spot: Social Media, CI aus einer Hand, Musik vorbereitet** · Claude für Dani
+**Spot: Social Media, CI aus einer Hand, Musik vorbereitet** · Claude für Dani · `d4d3981`
 Neue Frage 2 „Und Social Media? Soll sich jemand darum kümmern?“ mit eigener Szene, wenn man Ja sagt. Damit sind es jetzt vier Fragen, die Antwort steht auch in der Anfrage. Beim CI heisst es neu, dass von der Webseite über das Logo bis zur Visitenkarte alles aus einer Hand kommt. Dazu ein Musik-Player, der leise unter der Stimme läuft und am Schluss ausblendet, mit eigenem Knopf zum Abschalten und „Musik: Rocco Brandonisio“ im Fuss. Er sucht `media/spot-musik.mp3`. Solange die Datei fehlt, bleiben Knopf und Hinweis unsichtbar. Alles in DE, EN und IT.
 
 **Entwurf „Interaktiver Spot“ unter `/spot/`** · Claude für Dani · `68ce569`
