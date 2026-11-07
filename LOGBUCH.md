@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 7. November 2026
 
-**Spot: Musik von Rocco drin, lebendigere Stimme, Sprecher-Skript** · Claude für Dani
+**Spot: Musik von Rocco drin, lebendigere Stimme, Sprecher-Skript** · Claude für Dani · `b30175b`
 „Welcoming Morning“ von Rocco Brandonisio liegt als `media/spot-musik.mp3` im Repo (auf 128 kbit/s verkleinert, mit kurzem Ein- und Ausblenden für die Schleife) und läuft jetzt hörbar unter dem Spot, unter der Stimme etwas leiser. Die Browser-Stimme nimmt neu die natürlichste Stimme, die das Gerät hat, spricht Satz für Satz und je nach Moment schneller, langsamer, höher oder tiefer. Zwei Sätze enden neu mit Ausrufezeichen („Das wollen wir ändern!“, „Danke dir!“), in allen drei Sprachen. Für echte Gefühle ist aber eine Aufnahme nötig, darum kann der Spot jetzt eigene Sprachdateien abspielen. Das Skript mit Dateinamen und Audio Tags für ElevenLabs steht in `spot/STIMME.md`.
 
 **Spot: Social Media, CI aus einer Hand, Musik vorbereitet** · Claude für Dani · `d4d3981`
