@@ -149,6 +149,10 @@ def page(lang):
     projects = '</div><div class="projects">'.join(
         "".join(card(*by_key[k]) for k in row) for row in rows if row)
 
+    spots = "".join(
+        f'<a class="spotcard" href="{r}{href}"><div class="pic"><img src="{M}spot-{i+1}.jpg" alt="{e(alt)}" width="960" height="540" loading="lazy"></div>'
+        f'<div class="body"><span class="tag">{e(tag)}</span><h3>{e(title)}</h3><p>{e(desc)}</p><span class="more">{e(t["spots_btn"])} →</span></div></a>'
+        for i, (href, tag, title, desc, alt) in enumerate(t["spots"]))
     faqs = "\n".join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in t["faq_items"])
     videos = "".join(
         f'<figure class="reel"><video controls playsinline preload="none" poster="{M}{key}-poster.jpg" width="720" height="1280" aria-label="{e(title)}">'
@@ -242,6 +246,14 @@ def page(lang):
 <div class="wrap">
 <div class="head"><span class="eyebrow">{e(t["motion_eyebrow"])}</span><h2 id="h-motion">{e(t["motion_h2"])}</h2><p class="lead" style="color:#C9D2E3">{e(t["motion_lead"])}</p></div>
 <div class="reels">{videos}</div>
+</div>
+</section>
+
+<section id="spots" class="spots" aria-labelledby="h-spots">
+<div class="wrap">
+<div class="head"><span class="eyebrow">{e(t["spots_eyebrow"])}</span><h2 id="h-spots">{e(t["spots_h2"])}</h2><p class="lead">{e(t["spots_lead"])}</p></div>
+<div class="spotgrid">{spots}</div>
+<p class="spotnote">{e(t["spots_note"])}</p>
 </div>
 </section>
 

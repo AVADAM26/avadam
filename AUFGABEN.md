@@ -21,6 +21,10 @@ Stand 21. Oktober 2026. Erledigtes abhaken (`[x]`).
 - [ ] Logo-Dateien und CI-Blatt an Adi weiterleiten.
 - [ ] GitHub: gemeinsame Organisation einrichten oder Adi als Mitarbeiter einladen.
 
+- [ ] Interaktive Spots: Geschäftsadresse und Formulardienst festlegen, damit Anfragen wirklich ankommen.
+- [ ] Interaktive Spots: Sprachaufnahmen mit ElevenLabs nach `spot/STIMME.md`.
+- [ ] Texte zu den Spots auf Französisch gegenlesen lassen.
+
 ## Von Claude (nach den Antworten)
 
 - [ ] Freigegebene Texte einbauen, alle vier Sprachen.
