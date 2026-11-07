@@ -12,6 +12,9 @@ So führen wir es:
 
 ## 7. November 2026
 
+**Spot: Musik von Rocco drin, lebendigere Stimme, Sprecher-Skript** · Claude für Dani
+„Welcoming Morning“ von Rocco Brandonisio liegt als `media/spot-musik.mp3` im Repo (auf 128 kbit/s verkleinert, mit kurzem Ein- und Ausblenden für die Schleife) und läuft jetzt hörbar unter dem Spot, unter der Stimme etwas leiser. Die Browser-Stimme nimmt neu die natürlichste Stimme, die das Gerät hat, spricht Satz für Satz und je nach Moment schneller, langsamer, höher oder tiefer. Zwei Sätze enden neu mit Ausrufezeichen („Das wollen wir ändern!“, „Danke dir!“), in allen drei Sprachen. Für echte Gefühle ist aber eine Aufnahme nötig, darum kann der Spot jetzt eigene Sprachdateien abspielen. Das Skript mit Dateinamen und Audio Tags für ElevenLabs steht in `spot/STIMME.md`.
+
 **Spot: Social Media, CI aus einer Hand, Musik vorbereitet** · Claude für Dani · `d4d3981`
 Neue Frage 2 „Und Social Media? Soll sich jemand darum kümmern?“ mit eigener Szene, wenn man Ja sagt. Damit sind es jetzt vier Fragen, die Antwort steht auch in der Anfrage. Beim CI heisst es neu, dass von der Webseite über das Logo bis zur Visitenkarte alles aus einer Hand kommt. Dazu ein Musik-Player, der leise unter der Stimme läuft und am Schluss ausblendet, mit eigenem Knopf zum Abschalten und „Musik: Rocco Brandonisio“ im Fuss. Er sucht `media/spot-musik.mp3`. Solange die Datei fehlt, bleiben Knopf und Hinweis unsichtbar. Alles in DE, EN und IT.
 
