@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 7. November 2026
 
-**Entwurf „Interaktiver Spot“ unter `/spot/`** · Claude für Dani
+**Entwurf „Interaktiver Spot“ unter `/spot/`** · Claude für Dani · `68ce569`
 Ein klickbarer Prototyp, damit Adi sieht, was Dani im Kopf hat. Die Idee ist von SPOT/TASK (Spot Interattivo) abgeschaut: ein kurzer Film, der unterwegs Fragen stellt, und darunter eine Seite mit passenden Referenzen und einem Anfrageformular. Am Beispiel eines Massagestudios („Studio Lena“, erfunden). Die erste Frage hat Dani vorgegeben (Erklärvideo, Webseite, Webseite und CI, kompletter Auftritt), dazu zwei weitere (wo stehst du heute, wann soll's losgehen). Je nach Antwort kommt eine andere Szene und andere Referenzen. Die Szenen sind gezeichnete, animierte Bilder, die Stimme kommt vorerst aus dem Browser, im fertigen Spot käme eine echte Sprecherstimme. Sprachen Deutsch, Englisch, Italienisch, im Spot umschaltbar. Das Formular verschickt nichts, es zeigt nur, wie die Anfrage samt Antworten bei uns ankäme. Die Seite ist `noindex`, nirgends verlinkt und steht nicht in der Sitemap. Hell/Dunkel und Back-to-Top wie auf der Hauptseite. Alles in einer Datei, `spot/index.html`.
 
 ## 31. Oktober 2026
