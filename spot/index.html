@@ -170,7 +170,7 @@ form textarea{min-height:130px;resize:vertical}
 <section class="intro wrap">
 <p class="eyebrow" data-i="eyebrow">Interaktiver Spot</p>
 <h1 data-i="h1">Ein Video, das zurückfragt.</h1>
-<p data-i="lead">Schau dir den Spot an. Er dauert etwa eine Minute und stellt dir unterwegs drei kurze Fragen.</p>
+<p data-i="lead">Schau dir den Spot an. Er dauert etwa eine Minute und stellt dir unterwegs vier kurze Fragen.</p>
 </section>
 
 <div class="stagewrap">
@@ -263,6 +263,22 @@ form textarea{min-height:130px;resize:vertical}
 <text class="rise" style="animation-delay:1.6s" x="200" y="236" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">1 + 1 + 1</text>
 </svg></div>
 
+<div class="scene" data-s="sm"><svg viewBox="0 0 400 260" aria-hidden="true">
+<g class="rise"><rect x="130" y="10" width="140" height="244" rx="22" fill="#0A1020" stroke="#3C82D9" stroke-width="2"/><rect x="140" y="26" width="120" height="216" rx="10" fill="#FFFFFF"/><circle cx="156" cy="42" r="9" fill="#F3EBDD" stroke="#B5694A" stroke-width="2"/><rect x="170" y="38" width="50" height="7" rx="3.5" fill="#101B35"/></g>
+<rect class="pop" style="animation-delay:.4s" x="146" y="60" width="34" height="34" rx="4" fill="#F3EBDD"/>
+<rect class="pop" style="animation-delay:.55s" x="183" y="60" width="34" height="34" rx="4" fill="#3C82D9"/>
+<rect class="pop" style="animation-delay:.7s" x="220" y="60" width="34" height="34" rx="4" fill="#4E9A5B"/>
+<rect class="pop" style="animation-delay:.85s" x="146" y="97" width="34" height="34" rx="4" fill="#B5694A"/>
+<g class="pop" style="animation-delay:1s"><rect x="183" y="97" width="34" height="34" rx="4" fill="#101B35"/><path d="M196 107l10 7-10 7z" fill="#FFFFFF"/></g>
+<rect class="pop" style="animation-delay:1.15s" x="220" y="97" width="34" height="34" rx="4" fill="#E4D6BF"/>
+<rect class="pop" style="animation-delay:1.3s" x="146" y="134" width="34" height="34" rx="4" fill="#7DB0F0"/>
+<rect class="pop" style="animation-delay:1.45s" x="183" y="134" width="34" height="34" rx="4" fill="#F3EBDD"/>
+<rect class="pop" style="animation-delay:1.6s" x="220" y="134" width="34" height="34" rx="4" fill="#3C82D9"/>
+<g class="pop float" style="animation-delay:1.9s"><path d="M318 96c-10-10-26 2-14 16l14 13 14-13c12-14-4-26-14-16z" fill="#D93A3A"/></g>
+<g class="pop float" style="animation-delay:2.2s"><path d="M80 140c-7-7-18 1-10 11l10 9 10-9c8-10-3-18-10-11z" fill="#D93A3A"/></g>
+<g class="pop" style="animation-delay:2.4s"><rect x="292" y="150" width="70" height="28" rx="14" fill="#FFFFFF"/><text x="327" y="169" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="12" font-weight="800" fill="#101B35">+ 1 ♥</text></g>
+</svg></div>
+
 <!-- Ende -->
 <div class="scene" data-s="end"><svg viewBox="0 0 400 260" aria-hidden="true">
 <circle class="pop" cx="200" cy="110" r="64" fill="#3C82D9"/>
@@ -278,7 +294,9 @@ form textarea{min-height:130px;resize:vertical}
 <button type="button" id="pp" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path class="i-pause" d="M7 5h4v14H7zM13 5h4v14h-4z"/><path class="i-play" d="M8 5l12 7-12 7z" style="display:none"/></svg></button>
 <div class="prog" id="prog" aria-hidden="true"></div>
 <button type="button" class="voice" id="voice" aria-pressed="true"><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="M17 9l5 6M22 9l-5 6"/></svg><span class="lbl" data-i="voice">Stimme</span></button>
+<button type="button" class="voice" id="mus" aria-pressed="true" hidden><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3" fill="currentColor"/><circle cx="17" cy="16" r="3" fill="currentColor"/></svg><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3" fill="currentColor"/><path d="M3 3l18 18"/></svg><span class="lbl" data-i="music">Musik</span></button>
 </div>
+<audio id="music" src="../media/spot-musik.mp3" preload="metadata" loop></audio>
 
 <div class="start" id="start">
 <img src="../assets/avadam-logo-dark.svg" alt="" width="668" height="126">
@@ -326,59 +344,65 @@ form textarea{min-height:130px;resize:vertical}
 </section>
 </main>
 
-<footer class="foot"><div class="wrap" data-i="foot">Ein Entwurf von AVADAM · Human + Technology. Together.</div></footer>
+<footer class="foot"><div class="wrap"><span data-i="foot">Ein Entwurf von AVADAM · Human + Technology. Together.</span><span id="credit" hidden><br><span data-i="credit">Musik</span>: Rocco Brandonisio</span></div></footer>
 
 <button type="button" class="totop" id="totop" aria-label="Nach oben" title="Nach oben"><svg class="m-apfel" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 19C24 12 9 14 9 32c0 16 10 27 18 27 3 0 3.5-2 5-2s2 2 5 2c8 0 18-11 18-27 0-18-15-20-23-13z" fill="#D93A3A"/><path d="M32 19C24 12 9 14 9 32c0 16 10 27 18 27 3 0 3.5-2 5-2" fill="none" stroke="#A82525" stroke-width="1.5" opacity=".5"/><ellipse cx="19" cy="31" rx="3" ry="7" fill="#fff" opacity=".45" transform="rotate(15 19 31)"/><path d="M32 19c0-6 2-10 5-13" fill="none" stroke="#6B4423" stroke-width="3" stroke-linecap="round"/><path d="M35 12c4-8 13-8 16-5-4 7-12 8-16 5z" fill="#3FA34D"/><g class="bite" style="fill:var(--bg)"><circle cx="56" cy="29" r="6.5"/><circle cx="55" cy="39" r="6"/></g></svg><svg class="m-roboter" viewBox="0 0 64 64" aria-hidden="true"><g class="flame"><path d="M22 58q3.5 16 7 0z" fill="#FF9F1C"/><path d="M35 58q3.5 16 7 0z" fill="#FF9F1C"/><path d="M23.5 58q2 9 4 0z" fill="#FFE066"/><path d="M36.5 58q2 9 4 0z" fill="#FFE066"/></g><line x1="32" y1="5" x2="32" y2="12" stroke="#101B35" stroke-width="2.5"/><circle cx="32" cy="5" r="3.5" fill="#3C82D9"/><rect x="13" y="12" width="38" height="25" rx="9" fill="#3C82D9" stroke="#FFFFFF" stroke-width="1.5"/><rect x="18.5" y="17" width="27" height="14" rx="6" fill="#101B35"/><circle cx="26" cy="24" r="3.2" fill="#7FE3FF"/><circle cx="38" cy="24" r="3.2" fill="#7FE3FF"/><rect x="11" y="40" width="6" height="11" rx="3" fill="#3C82D9" stroke="#FFFFFF" stroke-width="1.2"/><rect x="47" y="40" width="6" height="11" rx="3" fill="#3C82D9" stroke="#FFFFFF" stroke-width="1.2"/><rect x="19" y="38" width="26" height="17" rx="6" fill="#101B35" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="32" cy="46.5" r="3.2" fill="#3C82D9"/><rect x="21.5" y="54" width="8" height="5" rx="2" fill="#101B35" stroke="#FFFFFF" stroke-width="1.2"/><rect x="34.5" y="54" width="8" height="5" rx="2" fill="#101B35" stroke="#FFFFFF" stroke-width="1.2"/></svg><svg class="m-stecker" viewBox="0 0 64 64" aria-hidden="true"><g class="spark" stroke="#FFC233" stroke-width="2.5" stroke-linecap="round"><path d="M20 4l-4-4"/><path d="M44 4l4-4"/><path d="M32 1v-5"/></g><rect x="23" y="3" width="5" height="13" rx="1.5" fill="#C9D2E3" stroke="#8A95AB" stroke-width="1"/><rect x="36" y="3" width="5" height="13" rx="1.5" fill="#C9D2E3" stroke="#8A95AB" stroke-width="1"/><rect x="15" y="14" width="34" height="23" rx="7" fill="#3C82D9" stroke="#FFFFFF" stroke-width="1.5"/><path d="M22 22h20M22 28h20" stroke="#2A6CC0" stroke-width="2.5" stroke-linecap="round"/><path d="M24 37h16l-4 9h-8z" fill="#101B35" stroke="#FFFFFF" stroke-width="1.2" stroke-linejoin="round"/><path d="M32 46c0 7-7 8-7 13 0 3 3 5 7 7" fill="none" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round"/><path d="M32 46c0 7-7 8-7 13 0 3 3 5 7 7" fill="none" stroke="#101B35" stroke-width="6" stroke-linecap="round"/></svg></button>
 
 <script>
 (function(){
 var T={
-de:{draft:"Entwurf · Beispiel Massagestudio · nur für Adi und Dani",eyebrow:"Interaktiver Spot",h1:"Ein Video, das zurückfragt.",lead:"Schau dir den Spot an. Er dauert etwa eine Minute und stellt dir unterwegs drei kurze Fragen.",play:"Spot abspielen",startnote:"Mit Ton ist es schöner. Etwa 1 Minute.",skip:"Spot überspringen",voice:"Stimme",pause:"Pause",resume:"Weiter",q:"Massage",
+de:{draft:"Entwurf · Beispiel Massagestudio · nur für Adi und Dani",eyebrow:"Interaktiver Spot",h1:"Ein Video, das zurückfragt.",lead:"Schau dir den Spot an. Er dauert etwa eine Minute und stellt dir unterwegs vier kurze Fragen.",play:"Spot abspielen",startnote:"Mit Ton ist es schöner. Etwa 1 Minute.",skip:"Spot überspringen",voice:"Stimme",music:"Musik",credit:"Musik",pause:"Pause",resume:"Weiter",q:"Massage",
 s1:"Das ist Lena. Sie hat ein kleines Massagestudio, und wer einmal bei ihr war, kommt wieder.",
 s2:"Nur, neue Kundschaft findet kaum zu ihr. Die meisten suchen zuerst im Internet.",
 s3:"Und dort sieht man von Lena fast nichts. Also scrollen die Leute einfach weiter.",
 s4:"Das wollen wir ändern. Wir sind AVADAM, Adi und Dani. Wir machen Webseiten, Videos und alles, was dazugehört.",
-qn:"Frage {n} von 3",
+qn:"Frage {n} von 4",
 q1:"Und bei dir? Was möchtest du?",o1:["Erklärvideo für mein Unternehmen","Webseite","Webseite und CI","Kompletter Auftritt inkl. Erklärvideo"],
-b:["Ein Erklärvideo erzählt in einer Minute, was dein Geschäft ausmacht. Mit Bildern, Musik und einer Stimme, die man sich merkt.","Eine Webseite, die schnell lädt, auf dem Handy gut aussieht und bei Google gefunden wird.","Logo, Farben, Schrift und die Webseite dazu. Alles aus einem Guss, damit man dich wiedererkennt.","Das ganze Paket. Ein Auftritt, der zusammenpasst, und ein Video, das deine Geschichte erzählt."],
-q2:"Wie sieht's heute bei dir aus?",o2:["Ich habe noch gar nichts","Es gibt etwas, aber es ist in die Jahre gekommen","Ich habe etwas, aber niemand findet mich"],
-q3:"Und wann soll's losgehen?",o3:["So bald wie möglich","In den nächsten Monaten","Ich schaue mich erst mal um"],
+b:["Ein Erklärvideo erzählt in einer Minute, was dein Geschäft ausmacht. Mit Bildern, Musik und einer Stimme, die man sich merkt.","Eine Webseite, die schnell lädt, auf dem Handy gut aussieht und bei Google gefunden wird.","Von der Webseite über das Logo bis zur Visitenkarte, alles aus einer Hand. So passt alles zusammen, und man erkennt dich wieder.","Das ganze Paket. Ein Auftritt, der zusammenpasst, und ein Video, das deine Geschichte erzählt."],
+q2:"Und Social Media? Soll sich jemand darum kümmern?",o2:["Ja, gern","Vielleicht später","Nein, das mache ich selbst"],
+smb:"Dann übernehmen wir die Posts, auf Wunsch mit Videos und Bildern. Du kümmerst dich um dein Geschäft.",
+q3:"Wie sieht's heute bei dir aus?",o3:["Ich habe noch gar nichts","Es gibt etwas, aber es ist in die Jahre gekommen","Ich habe etwas, aber niemand findet mich"],
+q4:"Und wann soll's losgehen?",o4:["So bald wie möglich","In den nächsten Monaten","Ich schaue mich erst mal um"],
 end:"Danke dir. Jetzt haben wir ein gutes Bild. Unten findest du Beispiele von uns, und du kannst uns direkt schreiben.",
-t_eyebrow:"Für dich zusammengestellt",t_h:"Danke! Das haben wir verstanden.",t_h0:"Schön, dass du da bist.",c1:"Wunsch",c2:"Heute",c3:"Start",replay:"Nochmal ansehen",share:"Link teilen",copied:"Link kopiert",t_refs:"Was wir schon gemacht haben",t_form:"Schreib uns",f_name:"Dein Name",f_biz:"Dein Geschäft",f_mail:"E-Mail",f_tel:"Telefon (freiwillig)",f_msg:"Erzähl uns kurz von deinem Geschäft",f_hint:"Deine Antworten aus dem Spot schicken wir automatisch mit.",f_send:"Anfrage senden",f_err:"Bitte Name und eine gültige E-Mail angeben.",
+t_eyebrow:"Für dich zusammengestellt",t_h:"Danke! Das haben wir verstanden.",t_h0:"Schön, dass du da bist.",c1:"Wunsch",csm:"Social Media",c2:"Heute",c3:"Start",replay:"Nochmal ansehen",share:"Link teilen",copied:"Link kopiert",t_refs:"Was wir schon gemacht haben",t_form:"Schreib uns",f_name:"Dein Name",f_biz:"Dein Geschäft",f_mail:"E-Mail",f_tel:"Telefon (freiwillig)",f_msg:"Erzähl uns kurz von deinem Geschäft",f_hint:"Deine Antworten aus dem Spot schicken wir automatisch mit.",f_send:"Anfrage senden",f_err:"Bitte Name und eine gültige E-Mail angeben.",
 lead_h:"Das ist ein Entwurf, es wurde nichts verschickt.",lead_p:"In der fertigen Version käme die Anfrage so bei uns an:",lead_subj:"Neue Anfrage über den Spot",l_name:"Name",l_biz:"Geschäft",l_mail:"E-Mail",l_tel:"Telefon",l_msg:"Nachricht",l_lang:"Sprache",
 how_h:"So würde es laufen",how_1:"Jeder Kunde bekommt seinen eigenen Spot mit seiner Geschichte, seiner Stimme und seinen Fragen. Dazu einen Link und einen QR-Code, die er überall teilen kann, per WhatsApp, Mail, Instagram oder auf Flyern.",how_2:"Die Antworten kommen zusammen mit der Anfrage bei ihm an. So weiss er schon vor dem ersten Gespräch, was jemand sucht. Die Seite darunter lässt sich jederzeit anpassen, ohne dass das Video neu gemacht werden muss.",foot:"Ein Entwurf von AVADAM · Human + Technology. Together.",
 r_web:"Webseite",r_map:"Interaktive Karte",r_vid:"Motion-Video",
 refs:{vku:"Gemeinsame Webseite von acht Fahrlehrerinnen und Fahrlehrern. Termine, Lokale und Anmeldung an einem Ort.",butterfly:"Ferienhaus für zwei in Grantown-on-Spey. Persönlich, warm und mit direkter Buchung.",karte:"Über 50 Ausflugsziele rund um Grantown-on-Spey, mit Fahrzeit und Lieblingsorten der Gastgeber.",highlands:"Stell dir vor … ein Abend in den Highlands. Für das Garden Park Guest House."},
 title:"Interaktiver Spot · AVADAM",theme:"Hell oder dunkel umschalten",voiceLang:"de-CH"},
-en:{draft:"Draft · example massage studio · for Adi and Dani only",eyebrow:"Interactive spot",h1:"A video that asks you back.",lead:"Have a look at the spot. It takes about a minute and asks you three quick questions along the way.",play:"Play the spot",startnote:"Better with sound. About 1 minute.",skip:"Skip the spot",voice:"Voice",pause:"Pause",resume:"Play",q:"Massage",
+en:{draft:"Draft · example massage studio · for Adi and Dani only",eyebrow:"Interactive spot",h1:"A video that asks you back.",lead:"Have a look at the spot. It takes about a minute and asks you four quick questions along the way.",play:"Play the spot",startnote:"Better with sound. About 1 minute.",skip:"Skip the spot",voice:"Voice",music:"Music",credit:"Music by",pause:"Pause",resume:"Play",q:"Massage",
 s1:"This is Lena. She runs a small massage studio, and anyone who's been once comes back.",
 s2:"The thing is, new customers hardly ever find her. Most people search online first.",
 s3:"And there, you can barely see Lena at all. So people just keep scrolling.",
 s4:"That's what we want to change. We're AVADAM, Adi and Dani. We make websites, videos and everything that goes with them.",
-qn:"Question {n} of 3",
+qn:"Question {n} of 4",
 q1:"And you? What are you after?",o1:["An explainer video for my business","A website","Website and brand identity","The full package incl. explainer video"],
-b:["An explainer video tells people in one minute what makes your business special. With pictures, music and a voice they'll remember.","A website that loads fast, looks good on a phone and gets found on Google.","Logo, colours, fonts and the website to go with it. All of a piece, so people recognise you.","The whole package. A look that fits together, and a video that tells your story."],
-q2:"Where are you at right now?",o2:["I don't have anything yet","I've got something, but it's showing its age","I've got something, but nobody finds me"],
-q3:"And when would you like to start?",o3:["As soon as possible","In the next few months","I'm just having a look for now"],
+b:["An explainer video tells people in one minute what makes your business special. With pictures, music and a voice they'll remember.","A website that loads fast, looks good on a phone and gets found on Google.","From the website to the logo, right down to your business cards, it all comes from one place. So everything fits and people recognise you.","The whole package. A look that fits together, and a video that tells your story."],
+q2:"And social media? Want someone to look after it?",o2:["Yes, please","Maybe later","No, I'll do it myself"],
+smb:"Then we take care of the posts, with videos and pictures if you like. You look after your business.",
+q3:"Where are you at right now?",o3:["I don't have anything yet","I've got something, but it's showing its age","I've got something, but nobody finds me"],
+q4:"And when would you like to start?",o4:["As soon as possible","In the next few months","I'm just having a look for now"],
 end:"Thank you. That gives us a good picture. Below you'll find some of our work, and you can write to us straight away.",
-t_eyebrow:"Put together for you",t_h:"Thanks! Here's what we got.",t_h0:"Nice to have you here.",c1:"Wish",c2:"Today",c3:"Start",replay:"Watch again",share:"Share link",copied:"Link copied",t_refs:"Some of our work",t_form:"Write to us",f_name:"Your name",f_biz:"Your business",f_mail:"Email",f_tel:"Phone (optional)",f_msg:"Tell us a bit about your business",f_hint:"Your answers from the spot are sent along automatically.",f_send:"Send enquiry",f_err:"Please enter your name and a valid email.",
+t_eyebrow:"Put together for you",t_h:"Thanks! Here's what we got.",t_h0:"Nice to have you here.",c1:"Wish",csm:"Social media",c2:"Today",c3:"Start",replay:"Watch again",share:"Share link",copied:"Link copied",t_refs:"Some of our work",t_form:"Write to us",f_name:"Your name",f_biz:"Your business",f_mail:"Email",f_tel:"Phone (optional)",f_msg:"Tell us a bit about your business",f_hint:"Your answers from the spot are sent along automatically.",f_send:"Send enquiry",f_err:"Please enter your name and a valid email.",
 lead_h:"This is a draft, nothing has been sent.",lead_p:"In the finished version, the enquiry would reach us like this:",lead_subj:"New enquiry from the spot",l_name:"Name",l_biz:"Business",l_mail:"Email",l_tel:"Phone",l_msg:"Message",l_lang:"Language",
 how_h:"How it would work",how_1:"Every client gets their own spot, with their story, their voice and their questions. Plus a link and a QR code to share anywhere, on WhatsApp, by email, on Instagram or on flyers.",how_2:"The answers arrive together with the enquiry. So they know what someone is looking for before the first conversation. The page below can be updated any time, without remaking the video.",foot:"A draft by AVADAM · Human + Technology. Together.",
 r_web:"Website",r_map:"Interactive map",r_vid:"Motion video",
 refs:{vku:"Shared website for eight driving instructors. Dates, venues and booking in one place.",butterfly:"Holiday cottage for two in Grantown-on-Spey. Personal, warm and with direct booking.",karte:"Over 50 places to visit around Grantown-on-Spey, with driving times and the hosts' favourites.",highlands:"Imagine … an evening in the Highlands. For the Garden Park Guest House."},
 title:"Interactive spot · AVADAM",theme:"Switch light or dark",voiceLang:"en-GB"},
-it:{draft:"Bozza · esempio studio di massaggi · solo per Adi e Dani",eyebrow:"Spot interattivo",h1:"Un video che ti fa domande.",lead:"Guarda lo spot. Dura circa un minuto e strada facendo ti fa tre domande veloci.",play:"Guarda lo spot",startnote:"Meglio con l'audio. Circa 1 minuto.",skip:"Salta lo spot",voice:"Voce",pause:"Pausa",resume:"Avanti",q:"Massaggi",
+it:{draft:"Bozza · esempio studio di massaggi · solo per Adi e Dani",eyebrow:"Spot interattivo",h1:"Un video che ti fa domande.",lead:"Guarda lo spot. Dura circa un minuto e strada facendo ti fa quattro domande veloci.",play:"Guarda lo spot",startnote:"Meglio con l'audio. Circa 1 minuto.",skip:"Salta lo spot",voice:"Voce",music:"Musica",credit:"Musica",pause:"Pausa",resume:"Avanti",q:"Massaggi",
 s1:"Questa è Lena. Ha un piccolo studio di massaggi, e chi ci è stato una volta ci torna.",
 s2:"Solo che i nuovi clienti la trovano a fatica. Quasi tutti cercano prima su internet.",
 s3:"E lì di Lena non si vede quasi niente. Così la gente continua a scorrere.",
 s4:"Ed è questo che vogliamo cambiare. Siamo AVADAM, Adi e Dani. Facciamo siti web, video e tutto quello che ci va insieme.",
-qn:"Domanda {n} di 3",
+qn:"Domanda {n} di 4",
 q1:"E tu? Cosa ti serve?",o1:["Un video esplicativo per la mia attività","Un sito web","Sito web e immagine aziendale","Tutto il pacchetto, video incluso"],
-b:["Un video esplicativo racconta in un minuto cosa rende speciale la tua attività. Con immagini, musica e una voce che resta in mente.","Un sito che si carica veloce, sta bene sul telefono e si trova su Google.","Logo, colori, caratteri e il sito che ci va con. Tutto in armonia, così ti riconoscono.","Il pacchetto completo. Un'immagine coerente e un video che racconta la tua storia."],
-q2:"Com'è la situazione oggi?",o2:["Non ho ancora niente","Ho qualcosa, ma ha i suoi anni","Ho qualcosa, ma nessuno mi trova"],
-q3:"E quando vorresti partire?",o3:["Il prima possibile","Nei prossimi mesi","Per ora mi sto solo guardando intorno"],
+b:["Un video esplicativo racconta in un minuto cosa rende speciale la tua attività. Con immagini, musica e una voce che resta in mente.","Un sito che si carica veloce, sta bene sul telefono e si trova su Google.","Dal sito web al logo, fino al biglietto da visita, pensiamo noi a tutto. Così tutto si abbina e ti riconoscono.","Il pacchetto completo. Un'immagine coerente e un video che racconta la tua storia."],
+q2:"E i social? Vuoi che qualcuno se ne occupi?",o2:["Sì, volentieri","Forse più avanti","No, lo faccio io"],
+smb:"Allora pensiamo noi ai post, se vuoi anche con video e foto. Tu pensi alla tua attività.",
+q3:"Com'è la situazione oggi?",o3:["Non ho ancora niente","Ho qualcosa, ma ha i suoi anni","Ho qualcosa, ma nessuno mi trova"],
+q4:"E quando vorresti partire?",o4:["Il prima possibile","Nei prossimi mesi","Per ora mi sto solo guardando intorno"],
 end:"Grazie. Adesso abbiamo un'idea chiara. Qui sotto trovi alcuni nostri lavori e puoi scriverci direttamente.",
-t_eyebrow:"Preparato per te",t_h:"Grazie! Ecco cosa abbiamo capito.",t_h0:"Bello averti qui.",c1:"Desiderio",c2:"Oggi",c3:"Inizio",replay:"Guarda di nuovo",share:"Condividi link",copied:"Link copiato",t_refs:"Alcuni nostri lavori",t_form:"Scrivici",f_name:"Il tuo nome",f_biz:"La tua attività",f_mail:"E-mail",f_tel:"Telefono (facoltativo)",f_msg:"Raccontaci in breve della tua attività",f_hint:"Le tue risposte dallo spot vengono inviate automaticamente.",f_send:"Invia richiesta",f_err:"Inserisci il tuo nome e un'e-mail valida.",
+t_eyebrow:"Preparato per te",t_h:"Grazie! Ecco cosa abbiamo capito.",t_h0:"Bello averti qui.",c1:"Desiderio",csm:"Social",c2:"Oggi",c3:"Inizio",replay:"Guarda di nuovo",share:"Condividi link",copied:"Link copiato",t_refs:"Alcuni nostri lavori",t_form:"Scrivici",f_name:"Il tuo nome",f_biz:"La tua attività",f_mail:"E-mail",f_tel:"Telefono (facoltativo)",f_msg:"Raccontaci in breve della tua attività",f_hint:"Le tue risposte dallo spot vengono inviate automaticamente.",f_send:"Invia richiesta",f_err:"Inserisci il tuo nome e un'e-mail valida.",
 lead_h:"Questa è una bozza, non è stato inviato niente.",lead_p:"Nella versione finale la richiesta ci arriverebbe così:",lead_subj:"Nuova richiesta dallo spot",l_name:"Nome",l_biz:"Attività",l_mail:"E-mail",l_tel:"Telefono",l_msg:"Messaggio",l_lang:"Lingua",
 how_h:"Come funzionerebbe",how_1:"Ogni cliente riceve il suo spot, con la sua storia, la sua voce e le sue domande. In più un link e un codice QR da condividere ovunque, su WhatsApp, per e-mail, su Instagram o sui volantini.",how_2:"Le risposte arrivano insieme alla richiesta. Così sa già prima del primo colloquio cosa cerca la persona. La pagina sotto si può aggiornare quando si vuole, senza rifare il video.",foot:"Una bozza di AVADAM · Human + Technology. Together.",
 r_web:"Sito web",r_map:"Mappa interattiva",r_vid:"Video motion",
@@ -391,12 +415,19 @@ var REFS=[
  {id:"highlands",name:"Highlands",kind:"r_vid",img:"../media/highlands-poster.jpg",url:"../#motion",fit:[0,3]},
  {id:"karte",name:"Grantown-Karte",kind:"r_map",img:"../media/karte-poster.jpg",url:"https://www.butterfly-cottage.co.uk/grantown/grantown-map.html",fit:[0,2]}
 ];
-var STEPS=[{s:"studio",t:"s1"},{s:"search",t:"s2"},{s:"scroll",t:"s3"},{s:"avadam",t:"s4"},{q:1},{branch:1},{q:2},{q:3},{s:"end",t:"end",last:1}];
+var STEPS=[{s:"studio",t:"s1"},{s:"search",t:"s2"},{s:"scroll",t:"s3"},{s:"avadam",t:"s4"},{q:1},{branch:1},{q:2},{smb:1},{q:3},{q:4},{s:"end",t:"end",last:1}];
 
 var $=function(id){return document.getElementById(id)};
 var stage=$("stage"),sub=$("sub"),ask=$("ask"),opts=$("opts"),prog=$("prog");
-var L="de",i=-1,ans=[null,null,null],timer=null,playing=false,voiceOn=true,runId=0,startedAt=0,curDur=0;
+var L="de",i=-1,ans=[null,null,null,null],timer=null,playing=false,voiceOn=true,runId=0,startedAt=0,curDur=0;
 var synth=window.speechSynthesis||null;
+var mu=$("music"),muOK=false,muOn=true,muVol=.32,muLow=.1,fadeT=null;
+function fadeTo(v,ms,cb){clearInterval(fadeT);if(!muOK){if(cb)cb();return}var st=mu.volume,n=Math.max(1,Math.round((ms||400)/40)),k=0;fadeT=setInterval(function(){k++;mu.volume=Math.max(0,Math.min(1,st+(v-st)*k/n));if(k>=n){clearInterval(fadeT);if(cb)cb()}},40)}
+function muStart(){if(!muOK||!muOn)return;if(mu.paused){mu.volume=0;var pr=mu.play();if(pr&&pr.catch)pr.catch(function(){})}fadeTo(muVol,900)}
+function muStop(ms){if(!muOK)return;fadeTo(0,ms||500,function(){mu.pause()})}
+function duck(d){if(muOK&&muOn&&!mu.paused)fadeTo(d?muLow:muVol,350)}
+mu.addEventListener("loadedmetadata",function(){muOK=true;$("mus").hidden=false;$("credit").hidden=false});
+mu.addEventListener("error",function(){muOK=false;$("mus").hidden=true});
 
 function pickLang(){var p=new URLSearchParams(location.search).get("lang");if(T[p])return p;try{var s=localStorage.getItem("avadam-spot-lang");if(T[s])return s}catch(e){}var n=(navigator.language||"en").slice(0,2);return T[n]?n:"en"}
 function t(k){return T[L][k]}
@@ -418,7 +449,7 @@ function say(txt,done){
  var ms=Math.max(3800,txt.length*62);var my=runId,fired=false;
  function fin(){if(fired||my!==runId)return;fired=true;clearTimeout(timer);done()}
  if(voiceOn&&synth){
-  try{synth.cancel();var u=new SpeechSynthesisUtterance(txt);u.lang=t("voiceLang");var vs=synth.getVoices(),pre=L;var v=vs.filter(function(x){return x.lang&&x.lang.replace("_","-")===u.lang})[0]||vs.filter(function(x){return x.lang&&x.lang.toLowerCase().indexOf(pre)===0})[0];if(v)u.voice=v;u.rate=L==="it"?1:.97;u.onend=function(){timer=setTimeout(fin,500)};synth.speak(u);timer=setTimeout(fin,ms+6000)}catch(e){timer=setTimeout(fin,ms)}
+  try{synth.cancel();var u=new SpeechSynthesisUtterance(txt);u.lang=t("voiceLang");var vs=synth.getVoices(),pre=L;var v=vs.filter(function(x){return x.lang&&x.lang.replace("_","-")===u.lang})[0]||vs.filter(function(x){return x.lang&&x.lang.toLowerCase().indexOf(pre)===0})[0];if(v)u.voice=v;u.rate=L==="it"?1:.97;u.onend=function(){duck(false);timer=setTimeout(fin,500)};duck(true);synth.speak(u);timer=setTimeout(fin,ms+6000)}catch(e){timer=setTimeout(fin,ms)}
   runBar(ms);
  }else{timer=setTimeout(fin,ms);runBar(ms)}
 }
@@ -428,6 +459,7 @@ function next(){
  var st=STEPS[i];if(!st)return;
  ask.classList.remove("on");
  if(st.q){askQ(st.q);return}
+ if(st.smb){if(ans[1]===0){show("sm");say(t("smb"),next)}else{next()}return}
  if(st.branch){show("b"+ans[0]);say(t("b")[ans[0]],next);return}
  show(st.s);say(t(st.t),function(){if(st.last){finish()}else next()});
 }
@@ -441,16 +473,16 @@ function askQ(n){
  if(voiceOn&&synth){try{synth.cancel();var u=new SpeechSynthesisUtterance(q);u.lang=t("voiceLang");synth.speak(u)}catch(e){}}
  setTimeout(function(){var f=opts.querySelector("button");if(f)f.focus({preventScroll:true})},400);
 }
-function finish(){playing=false;setPP();i=STEPS.length;markProg();openTask(true)}
-function play(from){runId++;clearTimeout(timer);if(synth)synth.cancel();playing=true;setPP();$("start").hidden=true;if(from===0){i=-1;ans=[null,null,null]}else{i--}next()}
-function pause(){runId++;playing=false;clearTimeout(timer);if(synth)synth.cancel();setPP();var b=prog.children[i]&&prog.children[i].firstChild;if(b){var w=getComputedStyle(b).width;b.style.transition="none";b.style.width=w}}
+function finish(){muStop(2500);playing=false;setPP();i=STEPS.length;markProg();openTask(true)}
+function play(from){runId++;clearTimeout(timer);if(synth)synth.cancel();playing=true;setPP();muStart();$("start").hidden=true;if(from===0){i=-1;ans=[null,null,null,null]}else{i--}next()}
+function pause(){runId++;muStop(300);playing=false;clearTimeout(timer);if(synth)synth.cancel();setPP();var b=prog.children[i]&&prog.children[i].firstChild;if(b){var w=getComputedStyle(b).width;b.style.transition="none";b.style.width=w}}
 function setPP(){var p=$("pp");p.setAttribute("aria-label",playing?t("pause"):t("resume"));p.querySelector(".i-pause").style.display=playing?"":"none";p.querySelector(".i-play").style.display=playing?"none":""}
 
 function openTask(scroll){var tk=$("task");tk.hidden=false;fillTask();if(scroll)setTimeout(function(){tk.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"})},900)}
 function fillTask(){
  var has=ans[0]!==null;$("th").textContent=has?t("t_h"):t("t_h0");
  var c=$("chips");c.innerHTML="";
- [["c1","o1",0],["c2","o2",1],["c3","o3",2]].forEach(function(x){if(ans[x[2]]===null)return;var s=document.createElement("span");var b=document.createElement("b");b.textContent=t(x[0]);s.appendChild(b);s.appendChild(document.createTextNode(t(x[1])[ans[x[2]]]));c.appendChild(s)});
+ [["c1","o1",0],["csm","o2",1],["c2","o3",2],["c3","o4",3]].forEach(function(x){if(ans[x[2]]===null)return;var s=document.createElement("span");var b=document.createElement("b");b.textContent=t(x[0]);s.appendChild(b);s.appendChild(document.createTextNode(t(x[1])[ans[x[2]]]));c.appendChild(s)});
  c.hidden=!has;
  var r=$("refs");r.innerHTML="";
  REFS.filter(function(x){return !has||x.fit.indexOf(ans[0])>-1}).slice(0,4).forEach(function(x){var a=document.createElement("a");a.className="ref";a.href=x.url;if(/^https?:/.test(x.url)){a.target="_blank";a.rel="noopener"}a.innerHTML='<img loading="lazy" width="640" height="400" alt=""><div><em></em><strong></strong><small></small></div>';a.querySelector("img").src=x.img;a.querySelector("img").alt=x.name;a.querySelector("em").textContent=t(x.kind);a.querySelector("strong").textContent=x.id==="karte"&&L!=="de"?(L==="it"?"Mappa di Grantown":"Grantown map"):x.name;a.querySelector("small").textContent=t("refs")[x.id];r.appendChild(a)});
@@ -463,8 +495,9 @@ $("form").addEventListener("submit",function(e){
  if(!ok){ld.textContent=t("f_err");return}
  var lines=[t("lead_subj"),""];
  if(ans[0]!==null)lines.push(t("c1")+": "+t("o1")[ans[0]]);
- if(ans[1]!==null)lines.push(t("c2")+": "+t("o2")[ans[1]]);
- if(ans[2]!==null)lines.push(t("c3")+": "+t("o3")[ans[2]]);
+ if(ans[1]!==null)lines.push(t("csm")+": "+t("o2")[ans[1]]);
+ if(ans[2]!==null)lines.push(t("c2")+": "+t("o3")[ans[2]]);
+ if(ans[3]!==null)lines.push(t("c3")+": "+t("o4")[ans[3]]);
  lines.push("",t("l_name")+": "+f.name.value.trim());
  if(f.biz.value.trim())lines.push(t("l_biz")+": "+f.biz.value.trim());
  lines.push(t("l_mail")+": "+f.mail.value.trim());
@@ -478,6 +511,7 @@ $("form").addEventListener("submit",function(e){
 $("go").addEventListener("click",function(){play(0)});
 $("skip").addEventListener("click",function(){$("start").hidden=true;show("end");sub.innerHTML="";i=STEPS.length;markProg();openTask(true)});
 $("pp").addEventListener("click",function(){if(playing)pause();else if(i>=STEPS.length-1&&!STEPS[i])play(0);else if(i>=STEPS.length)play(0);else play(1)});
+$("mus").addEventListener("click",function(){muOn=!muOn;this.setAttribute("aria-pressed",muOn?"true":"false");if(muOn&&playing)muStart();else muStop(300)});
 $("voice").addEventListener("click",function(){voiceOn=!voiceOn;this.setAttribute("aria-pressed",voiceOn?"true":"false");if(!voiceOn&&synth)synth.cancel();if(playing&&STEPS[i]&&!STEPS[i].q){play(1)}});
 $("replay").addEventListener("click",function(){stage.scrollIntoView({behavior:"smooth",block:"center"});setTimeout(function(){play(0)},500)});
 $("share").addEventListener("click",function(){var u=location.href.split("#")[0],btn=this;if(navigator.share){navigator.share({title:"AVADAM",url:u}).catch(function(){})}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){var s=btn.querySelector("span"),o=s.textContent;s.textContent=t("copied");setTimeout(function(){s.textContent=o},1800)})}});

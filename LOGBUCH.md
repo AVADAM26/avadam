@@ -12,6 +12,9 @@ So führen wir es:
 
 ## 7. November 2026
 
+**Spot: Social Media, CI aus einer Hand, Musik vorbereitet** · Claude für Dani
+Neue Frage 2 „Und Social Media? Soll sich jemand darum kümmern?“ mit eigener Szene, wenn man Ja sagt. Damit sind es jetzt vier Fragen, die Antwort steht auch in der Anfrage. Beim CI heisst es neu, dass von der Webseite über das Logo bis zur Visitenkarte alles aus einer Hand kommt. Dazu ein Musik-Player, der leise unter der Stimme läuft und am Schluss ausblendet, mit eigenem Knopf zum Abschalten und „Musik: Rocco Brandonisio“ im Fuss. Er sucht `media/spot-musik.mp3`. Solange die Datei fehlt, bleiben Knopf und Hinweis unsichtbar. Alles in DE, EN und IT.
+
 **Entwurf „Interaktiver Spot“ unter `/spot/`** · Claude für Dani · `68ce569`
 Ein klickbarer Prototyp, damit Adi sieht, was Dani im Kopf hat. Die Idee ist von SPOT/TASK (Spot Interattivo) abgeschaut: ein kurzer Film, der unterwegs Fragen stellt, und darunter eine Seite mit passenden Referenzen und einem Anfrageformular. Am Beispiel eines Massagestudios („Studio Lena“, erfunden). Die erste Frage hat Dani vorgegeben (Erklärvideo, Webseite, Webseite und CI, kompletter Auftritt), dazu zwei weitere (wo stehst du heute, wann soll's losgehen). Je nach Antwort kommt eine andere Szene und andere Referenzen. Die Szenen sind gezeichnete, animierte Bilder, die Stimme kommt vorerst aus dem Browser, im fertigen Spot käme eine echte Sprecherstimme. Sprachen Deutsch, Englisch, Italienisch, im Spot umschaltbar. Das Formular verschickt nichts, es zeigt nur, wie die Anfrage samt Antworten bei uns ankäme. Die Seite ist `noindex`, nirgends verlinkt und steht nicht in der Sitemap. Hell/Dunkel und Back-to-Top wie auf der Hauptseite. Alles in einer Datei, `spot/index.html`.
 
