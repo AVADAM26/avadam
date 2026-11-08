@@ -140,6 +140,8 @@ def page(lang):
             return f'<div class="pic"><img src="{M}karte-poster.jpg" alt="{e(name)}" width="720" height="1280" loading="lazy" style="object-position:50% 40%"></div>'
         if key == "meintag":
             return f'<div class="pic"><img src="{M}meintag.jpg" alt="{e(name)}" width="1280" height="800" loading="lazy" style="object-position:50% 50%"></div>'
+        if key == "dans":
+            return f'<div class="pic"><img src="{M}dans-ci.jpg" alt="{e(name)}, Logo, Visitenkarte, Arbeitskleidung und Facebook" width="1280" height="800" loading="lazy" style="object-position:50% 40%"></div>'
         if key == "butterfly":
             return f'<div class="pic"><img src="{M}butterfly.jpg" alt="{e(name)}, Grantown-on-Spey" width="1280" height="800" loading="lazy" style="object-position:50% 60%"></div>'
         cls = "navy"
@@ -151,7 +153,7 @@ def page(lang):
             f'<div class="body"><div class="tags">' +
             "".join(f'<span class="tag{" grey" if j else ""}">{e(tg)}</span>' for j, tg in enumerate(tags)) +
             f'</div><h3>{e(name)}</h3><p>{e(desc)}</p><span class="more">{e(t["proj_more"])} ↗</span></div></a>')
-    # Eine Zeile pro Bereich, je bis zu drei Referenzen: Webseiten, Software und Tools, Interaktive Karten
+    # Eine Zeile pro Bereich, je bis zu drei Referenzen: Webseiten, Software und Tools, Branding / CI, Interaktive Karten
     by_key = {p[0]: p for p in t["projects"]}
     rows = [[k for k in row if k in by_key] for row in PROJECT_ROWS]
     projects = '</div><div class="projects">'.join(

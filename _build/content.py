@@ -39,6 +39,7 @@ T = {
   ("karte", "Grantown-Karte", ["Interaktive Karte"], "Über 50 Ausflugsziele rund um Grantown-on-Spey, die meisten unter 50 Minuten entfernt. Mit Fahrzeit, Kategorien und den Lieblingsorten der Gastgeber."),
   ("guardops", "GuardOpS", ["Software"], "Einsatzsoftware für kleine und mittlere Schweizer Sicherheitsdienste. Dienstplanung, Mitarbeiter-App, Kontrollgänge mit NFC oder Geofence, Kundenportal und Rechnungen mit QR-Einzahlungsschein."),
   ("meintag", "Mein Tag", ["Web-Software"], "Persönlicher Tagesplaner mit KI. Termine und Ideen einfach diktieren, fotografieren oder per Mail schicken. Mit Wetter, Fahrzeiten, Push-Erinnerungen und Tag, Woche und Monat auf einen Blick."),
+  ('dans', "Dan's Garden Care", ['Branding / CI'], 'Das ganze Erscheinungsbild für Danis Gartengeschäft in Grantown-on-Spey. Von der Idee über Logo, Farben und Visitenkarte bis zur Arbeitskleidung und dem Auftritt auf Facebook. Im Video Schritt für Schritt.'),
  ],
  "motion_eyebrow": "Motion-Videos",
  "motion_h2": "Geschichten, die sich bewegen.",
@@ -125,6 +126,7 @@ T = {
   ("karte", "Grantown map", ["Interactive map"], "More than 50 places to visit around Grantown-on-Spey, most of them under 50 minutes away. With travel times, categories and the hosts' favourite spots."),
   ("guardops", "GuardOpS", ["Software"], "Operations software for small and medium-sized Swiss security companies. Shift planning, staff app, patrol checks with NFC or geofence, customer portal and invoices with Swiss QR bills."),
   ("meintag", "Mein Tag", ["Web tool"], "A personal day planner with AI. Just dictate, snap a photo or email your appointments and ideas. With weather, travel times, push reminders and day, week and month at a glance."),
+  ('dans', "Dan's Garden Care", ['Branding / CI'], "The complete look for Dani's gardening business in Grantown-on-Spey. From the idea to the logo, colours and business card, right through to workwear and the Facebook page. Step by step in the video."),
  ],
  "motion_eyebrow": "Motion videos",
  "motion_h2": "Stories that move.",
@@ -211,6 +213,7 @@ T = {
   ("karte", "Mappa di Grantown", ["Mappa interattiva"], "Oltre 50 mete intorno a Grantown-on-Spey, quasi tutte a meno di 50 minuti. Con tempi di percorrenza, categorie e i posti preferiti dei padroni di casa."),
   ("guardops", "GuardOpS", ["Software"], "Software operativo per piccole e medie aziende di sicurezza svizzere. Pianificazione dei turni, app per i collaboratori, giri di controllo con NFC o geofence, portale clienti e fatture con polizza QR."),
   ("meintag", "Mein Tag", ["Strumento web"], "Agenda personale con l'IA. Appuntamenti e idee si dettano, si fotografano o si mandano per e-mail. Con meteo, tempi di viaggio, promemoria push e giorno, settimana e mese a colpo d'occhio."),
+  ('dans', "Dan's Garden Care", ['Branding / CI'], "L'immagine completa per l'attività di giardinaggio di Dani a Grantown-on-Spey. Dall'idea al logo, ai colori e al biglietto da visita, fino agli abiti da lavoro e alla pagina Facebook. Passo dopo passo nel video."),
  ],
  "motion_eyebrow": "Video animati",
  "motion_h2": "Storie che si muovono.",
@@ -297,6 +300,7 @@ T = {
   ("karte", "Carte de Grantown", ["Carte interactive"], "Plus de 50 buts d'excursion autour de Grantown-on-Spey, la plupart à moins de 50 minutes. Avec temps de trajet, catégories et les lieux préférés des hôtes."),
   ("guardops", "GuardOpS", ["Logiciel"], "Logiciel d'exploitation pour les petites et moyennes entreprises de sécurité suisses. Planification des services, app pour les collaborateurs, rondes avec NFC ou géorepérage, portail client et factures avec QR-facture."),
   ("meintag", "Mein Tag", ["Outil web"], "Agenda personnel avec l'IA. Rendez-vous et idées se dictent, se photographient ou s'envoient par e-mail. Avec météo, temps de trajet, rappels push et jour, semaine et mois en un coup d'œil."),
+  ('dans', "Dan's Garden Care", ['Identité visuelle'], "Toute l'image de l'entreprise de jardinage de Dani à Grantown-on-Spey. De l'idée au logo, aux couleurs et à la carte de visite, jusqu'aux vêtements de travail et à la page Facebook. Étape par étape dans la vidéo."),
  ],
  "motion_eyebrow": "Vidéos animées",
  "motion_h2": "Des histoires qui bougent.",
@@ -356,6 +360,7 @@ T = {
 PROJECT_ROWS = [
  ["vku", "butterfly", "avaf"],   # Webseiten
  ["guardops", "meintag"],       # Software und Tools
+ ["dans"],                       # Branding / CI
  ["karte"],                      # Interaktive Karten
 ]
 
@@ -369,4 +374,5 @@ PROJECT_URLS = {
  "guardops": "https://guardops.ch/",
  "meintag": "https://avadam26.github.io/avadam/media/meintag.mp4",
  "avaf": "https://adrianvonarbfilms.ch/",
+ "dans": "https://avadam26.github.io/avadam/media/dans-ci.mp4",
 }
