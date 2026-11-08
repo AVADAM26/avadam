@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 8. November 2026
 
-**Links ins FAQ, GuardOpS mit 27 Jahren** · Claude für Dani
+**Links ins FAQ, GuardOpS mit 27 Jahren** · Claude für Dani · `7f379f8`
 Die Absätze zu CI und Social-Media-Management haben neu einen zweiten Link „Fragen dazu im FAQ“, der direkt zur passenden Frage springt und sie gleich aufklappt (`#faq-ci`, `#faq-social-media`). Dafür können Fragen in `faq_items` jetzt eine eigene ID haben, ein kleines Skript öffnet die Antwort beim Sprung. Ohne JavaScript landet man trotzdem bei der Frage. Beim Bereich Software und Tools stand, GuardOpS sei aus 22 Jahren Erfahrung entstanden. Richtig sind die gemeinsamen 27 Jahre von Adi und Dani, korrigiert in allen vier Sprachen. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel, ohne Fehler in der Konsole.
 
 **CI und Social-Media-Management in den Bereichen, mit internen Links** · Claude für Dani · `2bdc6a3`
