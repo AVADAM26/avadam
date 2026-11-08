@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 8. November 2026
 
-**Interaktive Karten heissen jetzt Interaktive Web-Erlebnisse** · Claude für Dani
+**Interaktive Karten heissen jetzt Interaktive Web-Erlebnisse** · Claude für Dani · `27506d7`
 Interaktiv sind bei uns nicht nur Karten, sondern auch die Spots, die im Video zurückfragen. Darum heisst der vierte Bereich jetzt „Interaktive Web-Erlebnisse“ (Interactive web experiences, Esperienze web interattive, Expériences web interactives). Geändert in allen vier Sprachen: Bereichstitel und Text, Zeile über dem Haupttitel, Einleitung, Seitentitel, Google-Beschreibung und der Satz beim Kontakt. Die Kachel und das Video zur Grantown-Karte heissen weiterhin Karte, das ist ja eine. In den strukturierten Daten ist der Begriff ergänzt, `CLAUDE.md` angepasst. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel, ohne Fehler in der Konsole.
 
 **Neue Referenz-Zeile Branding / CI mit Dan's Garden Care** · Claude für Dani · `62feb39`
