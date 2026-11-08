@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 8. November 2026
 
-**„Neu“ bei den Interaktiven Spots entfernt** · Claude für Dani
+**„Neu“ bei den Interaktiven Spots entfernt** · Claude für Dani · `93523e1`
 Die Überschrift über den Spots heisst jetzt nur noch „Interaktive Spots“, ohne „Neu:“ davor. Wir bieten es an und fertig. In allen vier Sprachen geändert, geprüft hell und dunkel auf allen Breiten.
 
 **Links ins FAQ, GuardOpS mit 27 Jahren** · Claude für Dani · `7f379f8`
