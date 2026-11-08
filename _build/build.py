@@ -122,8 +122,13 @@ def page(lang):
     og_alt = "\n".join(f'<meta property="og:locale:alternate" content="{LOCALE[l]}">' for l in LANGS if l != lang)
     nav = "".join(f'<a href="#{a}">{e(n)}</a>' for a, n in zip(ANCHORS, t["nav"]))
 
-    areas = "".join(f'<article class="card"><span class="num">0{i+1}</span><h3>{e(h)}</h3><p>{e(p)}</p></article>'
-                    for i, (h, p) in enumerate(t["areas"]))
+    def extra(x):  # Zusatzabsatz in einer Bereichskarte, mit Anker und internem Link
+        aid, txt, ltxt, href = x
+        ida = f' id="{aid}"' if aid else ''
+        return f'<p class="extra"{ida}>{e(txt)} <a href="#{href}">{e(ltxt)} →</a></p>'
+    areas = "".join(f'<article class="card"><span class="num">0{i+1}</span><h3>{e(a[0])}</h3><p>{e(a[1])}</p>'
+                    + "".join(extra(x) for x in (a[2] if len(a) > 2 else [])) + '</article>'
+                    for i, a in enumerate(t["areas"]))
 
     def pic(key, name):
         if key == "vku":
@@ -323,7 +328,7 @@ def llms():
              "AVADAM is the joint label of Adrian von Arb and Daniel Muccio. The name is pronounced like \"Adam\": "
              "a reminder of the first human being, where everything began, including the age of AI. "
              "Slogan: Human + Technology. Together.", "", "## About us", ""] + t["about"] + ["",
-             "## What we do"] + [f"- {h}: {p}" for h, p in t["areas"]] + ["", "## Projects"] + \
+             "## What we do"] + [f"- {a[0]}: {a[1]}" + "".join(" " + x[1] for x in (a[2] if len(a) > 2 else [])) for a in t["areas"]] + ["", "## Projects"] + \
             [f"- [{n}]({PROJECT_URLS[k]}): {d}" for k, n, _, d in t["projects"]] + \
             ["", "## Locations", "- Switzerland: 4632 Trimbach", "- United Kingdom: Grantown-on-Spey PH26 3JN, Scotland", "",
              "## Languages"] + [f"- [{LANG_NAMES[l]}]({url_of(l)})" for l in LANGS] + [""]

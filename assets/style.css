@@ -96,6 +96,12 @@ section{padding:112px 0}
 .card .num{font-weight:800;color:var(--blue);font-size:14px;letter-spacing:.2em}
 .card h3{margin:18px 0 12px}
 .card p{margin:0;font-size:16px}
+.card p.extra{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);scroll-margin-top:90px}
+.card p.extra a{font-weight:700;color:var(--blue-ink);text-decoration:none}
+.card p.extra a:hover{text-decoration:underline}
+.card p.extra:target{animation:hinweis 2.4s ease-out}
+@keyframes hinweis{0%,35%{background:color-mix(in srgb,var(--blue) 16%,transparent);box-shadow:0 0 0 10px color-mix(in srgb,var(--blue) 16%,transparent)}100%{background:transparent;box-shadow:0 0 0 10px transparent}}
+@media (prefers-reduced-motion:reduce){.card p.extra:target{animation:none}}
 
 /* Projekte */
 .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}

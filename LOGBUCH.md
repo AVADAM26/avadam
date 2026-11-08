@@ -10,6 +10,11 @@ So führen wir es:
 - Geschrieben wird so, dass man es in einem halben Jahr noch versteht. Keine Abkürzungen, keine Fachbegriffe ohne Erklärung.
 - Offene Punkte gehören nicht hierhin, die stehen in `AUFGABEN.md`.
 
+## 8. November 2026
+
+**CI und Social-Media-Management in den Bereichen, mit internen Links** · Claude für Dani
+Keine eigene Sparte, sondern in die bestehenden Bereiche eingebaut, in allen vier Sprachen. Bei Webseiten steht neu ein Absatz zum kompletten CI (Logo, Farben, Schriften, Visitenkarten, Logo für Arbeitskleidung, Banner für die Social-Media-Kanäle), Anker `#ci`. Bei Motion-Videos ein Absatz zum Social-Media-Management, Anker `#social-media`. Die beiden Absätze verlinken sich gegenseitig, dazu ein kurzer Satz mit Link bei den Interaktiven Karten. Springt man auf einen Anker, leuchtet der Absatz kurz auf. Im FAQ zwei neue Fragen zu CI und Social Media. Technisch können die Bereiche in `_build/content.py` jetzt optional Zusatzabsätze mit Anker und Link haben (`extra` in `_build/build.py`), Stil in `assets/style.css`. Auch `llms.txt` nimmt die neuen Texte mit. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel, ohne Fehler in der Konsole.
+
 ## 7. November 2026
 
 **Neuer Bereich „Interaktive Spots“ auf der Webseite, zweites Beispiel umbenannt** · Claude für Dani · `07cf81b`
