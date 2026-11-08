@@ -227,7 +227,7 @@ T = {
  "spots_lead": "Un breve filmato con immagini, musica e voce che strada facendo fa qualche domanda. Alla fine c'è una richiesta in cui sai già cosa cerca il cliente. Senza cookie e senza tracciamento.",
  "spots_btn": 'Provalo',
  "spots_note": 'Entrambi gli esempi sono bozze con aziende inventate. I moduli non inviano niente.',
- "spots": [('spot/', 'Per nuovi clienti', 'Lo spot', 'Racconta in un minuto cosa rende speciale la tua attività e chiede di cosa hanno bisogno le persone. Con un link e un codice QR tutti suoi, per WhatsApp, Instagram, e-mail o volantini. Le risposte ti arrivano direttamente insieme alla richiesta.', 'Spot per uno studio di massaggi, domanda con quattro risposte'), ('spot/kosmetik/', 'Per il tuo sito', 'Lo spot con appuntamento', 'Integrato nel tuo sito. Ti presenti tu, i clienti rispondono a qualche domanda e ricevono una valutazione da stampare o salvare. Poi prenotano subito, si fanno richiamare o passano da te.', 'Spot di uno studio estetico con domanda e risposte')],
+ "spots": [('spot/', 'Per nuovi clienti', 'Lo spot', 'Racconta in un minuto cosa rende speciale la tua attività e chiede di cosa hanno bisogno i clienti. Con un link e un codice QR, per WhatsApp, Instagram, e-mail o volantini. Le risposte ti arrivano direttamente insieme alla richiesta.', 'Spot per uno studio di massaggi, domanda con quattro risposte'), ('spot/kosmetik/', 'Per il tuo sito', 'Lo spot con appuntamento', 'Integrato nel tuo sito. Ti presenti tu, i clienti rispondono a qualche domanda e ricevono una valutazione da stampare o salvare. Poi prenotano subito, si fanno richiamare o passano da te.', 'Spot di uno studio estetico con domanda e risposte')],
  "story_eyebrow": "La nostra storia",
  "story_h2": "Perché AVADAM?",
  "story": [

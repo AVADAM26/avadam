@@ -12,6 +12,9 @@ So führen wir es:
 
 ## 8. November 2026
 
+**Italienisch: Text beim Spot angepasst** · Claude für Dani
+Bei der Karte „Lo spot“ heisst es jetzt „i clienti“ statt „le persone“, und „tutti suoi“ beim Link und QR-Code ist gestrichen. Geprüft hell und dunkel auf allen Breiten.
+
 **„Neu“ bei den Interaktiven Spots entfernt** · Claude für Dani · `93523e1`
 Die Überschrift über den Spots heisst jetzt nur noch „Interaktive Spots“, ohne „Neu:“ davor. Wir bieten es an und fertig. In allen vier Sprachen geändert, geprüft hell und dunkel auf allen Breiten.
 
