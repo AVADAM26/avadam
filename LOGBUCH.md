@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 8. November 2026
 
-**Neue Referenz-Zeile Branding / CI mit Dan's Garden Care** · Claude für Dani
+**Neue Referenz-Zeile Branding / CI mit Dan's Garden Care** · Claude für Dani · `62feb39`
 Bei den Projekten gibt es zwischen Software und Tools und den Interaktiven Karten eine neue Zeile für Branding / CI. Erste Kachel ist Dan's Garden Care, Danis Gartengeschäft in Grantown-on-Spey. Sie führt zu einem stummen Video von 34 Sekunden, das Schritt für Schritt zeigt, wie das Erscheinungsbild entstanden ist: Idee, Logo, Farben und Piktogramme, Visitenkarte, Arbeitskleidung, Facebook. Telefon und Mail sind darin absichtlich sichtbar geschwärzt. Video `media/dans-ci.mp4`, Vorschaubild `media/dans-ci.jpg`, Texte in allen vier Sprachen in `_build/content.py`, Bild in `_build/build.py`, Regel zu den Zeilen in `CLAUDE.md` angepasst. Quelle und Bauskript des Videos liegen im Repo dans-garden-care unter `schaufenster/`. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel, ohne Fehler in der Konsole.
 
 **Italienisch: Text beim Spot angepasst** · Claude für Dani · `7dc5d44`
