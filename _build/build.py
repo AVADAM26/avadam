@@ -66,7 +66,9 @@ JS = ("(function(){var b=document.getElementById('totop'),M=['apfel','roboter','
  "setTimeout(function(){b.classList.remove('go','show');busy=false},2400)});"
  "var g=document.getElementById('burger'),P=document.getElementById('mmenu');function sm(o){P.hidden=!o;g.setAttribute('aria-expanded',o?'true':'false')}g.addEventListener('click',function(){sm(P.hidden)});P.addEventListener('click',function(e){if(e.target.closest('a'))sm(false)});addEventListener('keydown',function(e){if(e.key==='Escape'&&!P.hidden){sm(false);g.focus()}});addEventListener('resize',function(){if(innerWidth>860)sm(false)});var t=document.getElementById('theme');t.addEventListener('click',function(){var r=document.documentElement;"
  "var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');"
- "var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('avadam-theme',n)}catch(e){}})})();")
+ "var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('avadam-theme',n)}catch(e){}});"
+ "function oq(){var d=location.hash&&document.getElementById(location.hash.slice(1));if(d&&d.tagName==='DETAILS'){d.open=true;d.scrollIntoView({block:'start'})}}"
+ "addEventListener('hashchange',oq);oq()})();")
 
 ANCHORS = ["bereiche", "projekte", "geschichte", "kontakt"]
 
@@ -102,7 +104,7 @@ def jsonld(lang, t, r):
             for key, title, cap in t["videos"]]
     faq = {"@type": "FAQPage", "@id": page["@id"].replace("#page", "#faq"), "inLanguage": lang,
            "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
-                          for q, a in t["faq_items"]]}
+                          for q, a, *_ in t["faq_items"]]}
     return json.dumps({"@context": "https://schema.org", "@graph": [org, site, page, works, faq] + vids},
                       ensure_ascii=False, indent=1)
 
@@ -123,9 +125,10 @@ def page(lang):
     nav = "".join(f'<a href="#{a}">{e(n)}</a>' for a, n in zip(ANCHORS, t["nav"]))
 
     def extra(x):  # Zusatzabsatz in einer Bereichskarte, mit Anker und internem Link
-        aid, txt, ltxt, href = x
+        aid, txt, ltxt, href = x[:4]
         ida = f' id="{aid}"' if aid else ''
-        return f'<p class="extra"{ida}>{e(txt)} <a href="#{href}">{e(ltxt)} →</a></p>'
+        faq = f'<br><a class="faqlink" href="#{x[5]}">{e(x[4])} →</a>' if len(x) > 5 else ''
+        return f'<p class="extra"{ida}>{e(txt)} <a href="#{href}">{e(ltxt)} →</a>{faq}</p>'
     areas = "".join(f'<article class="card"><span class="num">0{i+1}</span><h3>{e(a[0])}</h3><p>{e(a[1])}</p>'
                     + "".join(extra(x) for x in (a[2] if len(a) > 2 else [])) + '</article>'
                     for i, a in enumerate(t["areas"]))
@@ -158,7 +161,7 @@ def page(lang):
         f'<a class="spotcard" href="{r}{href}"><div class="pic"><img src="{M}spot-{i+1}.jpg" alt="{e(alt)}" width="960" height="540" loading="lazy"></div>'
         f'<div class="body"><span class="tag">{e(tag)}</span><h3>{e(title)}</h3><p>{e(desc)}</p><span class="more">{e(t["spots_btn"])} →</span></div></a>'
         for i, (href, tag, title, desc, alt) in enumerate(t["spots"]))
-    faqs = "\n".join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in t["faq_items"])
+    faqs = "\n".join(f'<details{f" id={chr(34)}{f[2]}{chr(34)}" if len(f) > 2 else ""}><summary>{e(f[0])}</summary><p>{e(f[1])}</p></details>' for f in t["faq_items"])
     videos = "".join(
         f'<figure class="reel"><video controls playsinline preload="none" poster="{M}{key}-poster.jpg" width="720" height="1280" aria-label="{e(title)}">'
         f'<source src="{M}{key}.mp4" type="video/mp4">{e(t["video_fallback"])}</video>'

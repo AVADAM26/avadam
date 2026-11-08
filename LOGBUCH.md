@@ -12,6 +12,9 @@ So führen wir es:
 
 ## 8. November 2026
 
+**Links ins FAQ, GuardOpS mit 27 Jahren** · Claude für Dani
+Die Absätze zu CI und Social-Media-Management haben neu einen zweiten Link „Fragen dazu im FAQ“, der direkt zur passenden Frage springt und sie gleich aufklappt (`#faq-ci`, `#faq-social-media`). Dafür können Fragen in `faq_items` jetzt eine eigene ID haben, ein kleines Skript öffnet die Antwort beim Sprung. Ohne JavaScript landet man trotzdem bei der Frage. Beim Bereich Software und Tools stand, GuardOpS sei aus 22 Jahren Erfahrung entstanden. Richtig sind die gemeinsamen 27 Jahre von Adi und Dani, korrigiert in allen vier Sprachen. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel, ohne Fehler in der Konsole.
+
 **CI und Social-Media-Management in den Bereichen, mit internen Links** · Claude für Dani · `2bdc6a3`
 Keine eigene Sparte, sondern in die bestehenden Bereiche eingebaut, in allen vier Sprachen. Bei Webseiten steht neu ein Absatz zum kompletten CI (Logo, Farben, Schriften, Visitenkarten, Logo für Arbeitskleidung, Banner für die Social-Media-Kanäle), Anker `#ci`. Bei Motion-Videos ein Absatz zum Social-Media-Management, Anker `#social-media`. Die beiden Absätze verlinken sich gegenseitig, dazu ein kurzer Satz mit Link bei den Interaktiven Karten. Springt man auf einen Anker, leuchtet der Absatz kurz auf. Im FAQ zwei neue Fragen zu CI und Social Media. Technisch können die Bereiche in `_build/content.py` jetzt optional Zusatzabsätze mit Anker und Link haben (`extra` in `_build/build.py`), Stil in `assets/style.css`. Auch `llms.txt` nimmt die neuen Texte mit. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel, ohne Fehler in der Konsole.
 

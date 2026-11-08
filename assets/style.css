@@ -99,6 +99,9 @@ section{padding:112px 0}
 .card p.extra{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);scroll-margin-top:90px}
 .card p.extra a{font-weight:700;color:var(--blue-ink);text-decoration:none}
 .card p.extra a:hover{text-decoration:underline}
+.card p.extra a.faqlink{display:inline-block;margin-top:8px;font-weight:600;font-size:15px}
+details[id]{scroll-margin-top:90px}
+details[id]:target{animation:hinweis 2.4s ease-out}
 .card p.extra:target{animation:hinweis 2.4s ease-out}
 @keyframes hinweis{0%,35%{background:color-mix(in srgb,var(--blue) 16%,transparent);box-shadow:0 0 0 10px color-mix(in srgb,var(--blue) 16%,transparent)}100%{background:transparent;box-shadow:0 0 0 10px transparent}}
 @media (prefers-reduced-motion:reduce){.card p.extra:target{animation:none}}
