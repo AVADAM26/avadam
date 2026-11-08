@@ -1,6 +1,6 @@
 # AVADAM
 
-> AVADAM builds websites, software and tools, motion videos and interactive maps. The ideas are ours, the build is done with AI. Based in Trimbach (Switzerland) and Grantown-on-Spey (Scotland).
+> AVADAM builds websites, software and tools, motion videos and interactive web experiences. The ideas are ours, the build is done with AI. Based in Trimbach (Switzerland) and Grantown-on-Spey (Scotland).
 
 AVADAM is the joint label of Adrian von Arb and Daniel Muccio. The name is pronounced like "Adam": a reminder of the first human being, where everything began, including the age of AI. Slogan: Human + Technology. Together.
 
@@ -14,7 +14,7 @@ AVADAM brings all of this together. We know day-to-day business life from the in
 - Websites: Clear, fast websites that work just as well on a phone as on a computer. Built from day one so that Google and AI search can find and understand them. If you like, we design your whole look along with it, a complete brand identity with logo, colours and fonts. Plus business cards, your logo for workwear and matching banners for the social media channels you use. That way everything fits together. Already have a brand identity? Then we work with it.
 - Software and tools: Software for real-world workflows. GuardOpS grew out of our combined 27 years in the security industry. We build what we would have needed ourselves.
 - Motion videos: Short animated videos for social media and websites. The story and the pictures in our heads are ours, AI helps us bring them to life. A good video only helps if people actually see it. That's why we can also take care of your social media management. We plan the posts, create the photos and videos and post regularly. You run your business, we make sure people see it.
-- Interactive maps: Maps that let Guests and customers explore on their own, with travel times, categories and the hosts' personal tips. A map like this is also easy to share, for example on your social media channels.
+- Interactive web experiences: Anything where people don't just watch, they join in. Maps that let Guests and customers explore on their own, with travel times, categories and the hosts' tips. Or spots that ask questions back during the video. Something like this is also easy to share, for example on your social media channels.
 
 ## Projects
 - [VKU Oberbaselbiet](https://avadam26.github.io/vku-entwurf/): A shared website for eight driving instructors offering traffic awareness and first aid courses. Dates, venues and sign-up in one place.

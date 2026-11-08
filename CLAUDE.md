@@ -4,7 +4,7 @@ Diese Datei lesen, bevor am Projekt gearbeitet wird. Sie gilt für alle, die hie
 
 ## Worum es geht
 
-AVADAM ist die gemeinsame Marke von **Adrian von Arb** (Adi) und **Daniel Muccio** (Dani). Wir bauen Webseiten, Software und Tools, Motion-Videos und interaktive Karten. Die Ideen kommen von uns, umgesetzt wird mit KI.
+AVADAM ist die gemeinsame Marke von **Adrian von Arb** (Adi) und **Daniel Muccio** (Dani). Wir bauen Webseiten, Software und Tools, Motion-Videos und interaktive Web-Erlebnisse (Karten, Spots). Die Ideen kommen von uns, umgesetzt wird mit KI.
 
 Der Name setzt sich aus unseren Namen zusammen (**A**drian **v**on **A**rb, **D**aniel **M**uccio) und wird wie „Adam“ ausgesprochen. Adam steht für den ersten Menschen. Von dort hat alles angefangen, auch die Ära der KI. AVADAM soll daran erinnern, woher wir kommen. Slogan: **Human + Technology. Together.**
 
@@ -64,7 +64,7 @@ Die erzeugten HTML-Dateien werden mit committed, weil GitHub Pages sie direkt au
 - Jedes Bild mit sinnvollem Alt-Text, Überschriften in logischer Reihenfolge.
 - Bei eigener Domain nur `BASE` in `_build/build.py` anpassen und neu bauen.
 
-**Referenzen.** Eine Zeile pro Bereich, je bis zu drei Referenzen, in dieser Reihenfolge: Webseiten, Software und Tools, Branding / CI, Interaktive Karten. Reihenfolge in `PROJECT_ROWS` in `_build/content.py`. Bei Beispielen aus eigenen Geschäften (z. B. Dan's Garden Care) Telefon und Mail sichtbar schwärzen.
+**Referenzen.** Eine Zeile pro Bereich, je bis zu drei Referenzen, in dieser Reihenfolge: Webseiten, Software und Tools, Branding / CI, Interaktive Web-Erlebnisse. Reihenfolge in `PROJECT_ROWS` in `_build/content.py`. Bei Beispielen aus eigenen Geschäften (z. B. Dan's Garden Care) Telefon und Mail sichtbar schwärzen.
 
 **Kein Tracking, keine Cookies** ohne ausdrückliches Okay von Adi und Dani.
 

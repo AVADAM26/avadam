@@ -84,7 +84,7 @@ def jsonld(lang, t, r):
             {"@type": "PostalAddress", "postalCode": "4632", "addressLocality": "Trimbach", "addressCountry": "CH"},
             {"@type": "PostalAddress", "postalCode": "PH26 3JN", "addressLocality": "Grantown-on-Spey", "addressRegion": "Scotland", "addressCountry": "GB"},
         ],
-        "knowsAbout": ["Web design", "Websites", "Software development", "Motion design", "Interactive maps", "Artificial intelligence", "SEO"],
+        "knowsAbout": ["Web design", "Websites", "Software development", "Motion design", "Interactive maps", "Interactive web experiences", "Artificial intelligence", "SEO"],
         "knowsLanguage": ["de", "en", "it", "fr"],
     }
     site = {"@type": "WebSite", "@id": BASE + "#website", "url": BASE, "name": "AVADAM",
@@ -153,7 +153,7 @@ def page(lang):
             f'<div class="body"><div class="tags">' +
             "".join(f'<span class="tag{" grey" if j else ""}">{e(tg)}</span>' for j, tg in enumerate(tags)) +
             f'</div><h3>{e(name)}</h3><p>{e(desc)}</p><span class="more">{e(t["proj_more"])} ↗</span></div></a>')
-    # Eine Zeile pro Bereich, je bis zu drei Referenzen: Webseiten, Software und Tools, Branding / CI, Interaktive Karten
+    # Eine Zeile pro Bereich, je bis zu drei Referenzen: Webseiten, Software und Tools, Branding / CI, Interaktive Web-Erlebnisse
     by_key = {p[0]: p for p in t["projects"]}
     rows = [[k for k in row if k in by_key] for row in PROJECT_ROWS]
     projects = '</div><div class="projects">'.join(
