@@ -282,6 +282,10 @@ def page(lang):
 <div class="card person"><span class="mono b" aria-hidden="true">DM</span><h3>Daniel Muccio</h3></div>
 </div>
 <div class="places">{places}</div>
+<figure class="team-photo"><picture>
+<source type="image/webp" srcset="{M}team-whiteboard-800.webp 800w, {M}team-whiteboard-1600.webp 1600w" sizes="(max-width:1200px) 100vw, 1120px">
+<img src="{M}team-whiteboard-1600.jpg" srcset="{M}team-whiteboard-800.jpg 800w, {M}team-whiteboard-1600.jpg 1600w" sizes="(max-width:1200px) 100vw, 1120px" alt="{e(t["team_photo_alt"])}" width="1600" height="800" loading="lazy" decoding="async">
+</picture></figure>
 </div>
 </section>
 

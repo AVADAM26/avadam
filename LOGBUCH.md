@@ -10,6 +10,11 @@ So führen wir es:
 - Geschrieben wird so, dass man es in einem halben Jahr noch versteht. Keine Abkürzungen, keine Fachbegriffe ohne Erklärung.
 - Offene Punkte gehören nicht hierhin, die stehen in `AUFGABEN.md`.
 
+## 9. November 2026
+
+**Whiteboard-Bild von Adi und Dani unter den Niederlassungen** · Claude für Dani
+Unter den Kärtchen Schweiz und UK, direkt vor den Fragen, steht jetzt ein breites Bild von Adi und Dani vor einem Whiteboard. Auf der Tafel stehen AVADAM mit Switzerland und UK, der Slogan, unsere fünf Bereiche und sechs Referenzfotos mit Magneten. Das Bild ist eine Montage: beide Porträts freigestellt (Adis Porträt von formateins, Danis neues Foto vom 9. November) und vor eine gezeichnete Tafel gesetzt. Bauskript und Einzelteile liegen bei Dani auf E:\Claude\Projekte\AVADAM\Whiteboard-Foto. Auf der Seite in zwei Grössen (800 und 1600 Pixel) als WebP mit JPG als Rückfall, damit es auf dem Handy schnell lädt. Alt-Text in allen vier Sprachen in `_build/content.py` (`team_photo_alt`), Einbau in `_build/build.py`, Stil in `assets/style.css`. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel, ohne Fehler in der Konsole.
+
 ## 8. November 2026
 
 **Interaktive Karten heissen jetzt Interaktive Web-Erlebnisse** · Claude für Dani · `27506d7`
