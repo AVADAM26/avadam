@@ -12,6 +12,9 @@ So führen wir es:
 
 ## 9. November 2026
 
+**Whiteboard-Bild bündig und 5 % niedriger, Stylesheet immer frisch** · Claude für Dani
+Das Bild war bei Dani nicht bündig mit den Kärtchen und wirkte in die Höhe gezogen. Grund: Sein Browser hatte noch das alte Stylesheet im Speicher. Ab jetzt hängt an `style.css` eine Versionsnummer, die sich bei jeder Änderung von selbst ändert (`CSS_V` in `_build/build.py`), damit Browser immer das neue Stylesheet laden. Zusätzlich behalten Bilder jetzt überall ihr Seitenverhältnis (`height:auto`). Das Bild selbst ist oben und unten um 5 % beschnitten (1600 × 760 statt 1600 × 800). Gemessen auf 320, 390, 768 und 1280 Pixel: links und rechts genau bündig mit den Kärtchen, nicht verzerrt, ohne Fehler in der Konsole.
+
 **Whiteboard-Bild von Adi und Dani unter den Niederlassungen** · Claude für Dani · `9fed247`
 Unter den Kärtchen Schweiz und UK, direkt vor den Fragen, steht jetzt ein breites Bild von Adi und Dani vor einem Whiteboard. Auf der Tafel stehen AVADAM mit Switzerland und UK, der Slogan, unsere fünf Bereiche und sechs Referenzfotos mit Magneten. Das Bild ist eine Montage: beide Porträts freigestellt (Adis Porträt und Danis neues Foto vom 9. November) und vor eine gezeichnete Tafel gesetzt. Bauskript und Einzelteile liegen bei Dani auf E:\Claude\Projekte\AVADAM\Whiteboard-Foto. Auf der Seite in zwei Grössen (800 und 1600 Pixel) als WebP mit JPG als Rückfall, damit es auf dem Handy schnell lädt. Alt-Text in allen vier Sprachen in `_build/content.py` (`team_photo_alt`), Einbau in `_build/build.py`, Stil in `assets/style.css`. Geprüft in allen vier Sprachen, hell und dunkel, auf 320, 390, 768 und 1280 Pixel, ohne Fehler in der Konsole.
 

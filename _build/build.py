@@ -11,6 +11,10 @@ TODAY = "2026-10-21"
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)
 
+import hashlib as _hl
+# Version im Link, damit Browser nach jeder Änderung das neue Stylesheet laden
+CSS_V = _hl.md5(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "style.css"), "rb").read()).hexdigest()[:8]
+
 def path_of(lang):            # relativer Pfad der Sprachseite
     return "" if lang == "de" else f"{lang}/"
 
@@ -211,7 +215,7 @@ def page(lang):
 <link rel="icon" href="{A}favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{A}apple-touch-icon.png">
 <link rel="preload" href="{A}fonts/montserrat-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{A}style.css">
+<link rel="stylesheet" href="{A}style.css?v={CSS_V}">
 <link rel="alternate" type="text/plain" href="{BASE}llms.txt" title="LLM summary">
 <script type="application/ld+json">
 {jsonld(lang, t, r)}
@@ -284,7 +288,7 @@ def page(lang):
 <div class="places">{places}</div>
 <figure class="team-photo"><picture>
 <source type="image/webp" srcset="{M}team-whiteboard-800.webp 800w, {M}team-whiteboard-1600.webp 1600w" sizes="(max-width:1200px) 100vw, 1120px">
-<img src="{M}team-whiteboard-1600.jpg" srcset="{M}team-whiteboard-800.jpg 800w, {M}team-whiteboard-1600.jpg 1600w" sizes="(max-width:1200px) 100vw, 1120px" alt="{e(t["team_photo_alt"])}" width="1600" height="800" loading="lazy" decoding="async">
+<img src="{M}team-whiteboard-1600.jpg" srcset="{M}team-whiteboard-800.jpg 800w, {M}team-whiteboard-1600.jpg 1600w" sizes="(max-width:1200px) 100vw, 1120px" alt="{e(t["team_photo_alt"])}" width="1600" height="760" loading="lazy" decoding="async">
 </picture></figure>
 </div>
 </section>

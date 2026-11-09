@@ -30,7 +30,7 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--text);font-family:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.65}
-img,video{max-width:100%;display:block}
+img,video{max-width:100%;height:auto;display:block}
 a{color:var(--blue-ink)}
 a:hover{color:var(--ink)}
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
