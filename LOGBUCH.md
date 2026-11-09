@@ -12,7 +12,7 @@ So führen wir es:
 
 ## 9. November 2026
 
-**Whiteboard-Bild bündig und 5 % niedriger, Stylesheet immer frisch** · Claude für Dani
+**Whiteboard-Bild bündig und 5 % niedriger, Stylesheet immer frisch** · Claude für Dani · `f38b530`
 Das Bild war bei Dani nicht bündig mit den Kärtchen und wirkte in die Höhe gezogen. Grund: Sein Browser hatte noch das alte Stylesheet im Speicher. Ab jetzt hängt an `style.css` eine Versionsnummer, die sich bei jeder Änderung von selbst ändert (`CSS_V` in `_build/build.py`), damit Browser immer das neue Stylesheet laden. Zusätzlich behalten Bilder jetzt überall ihr Seitenverhältnis (`height:auto`). Das Bild selbst ist oben und unten um 5 % beschnitten (1600 × 760 statt 1600 × 800). Gemessen auf 320, 390, 768 und 1280 Pixel: links und rechts genau bündig mit den Kärtchen, nicht verzerrt, ohne Fehler in der Konsole.
 
 **Whiteboard-Bild von Adi und Dani unter den Niederlassungen** · Claude für Dani · `9fed247`
